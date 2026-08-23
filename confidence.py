@@ -4,7 +4,7 @@ import csv
 import json
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, Iterable, List
+from typing import Any, Dict, List
 
 
 CONFIDENCE_HEADERS = [
@@ -65,16 +65,11 @@ def _data_quality(raw_dir: Path, source_report: str, provenance: Dict[str, Any])
     score = 100.0
     notes: List[str] = []
 
-    source = source_report.strip()
-    if not source:
+    if not source_report.strip():
         score -= 25
         notes.append("candidate source report not identified")
 
-    stale_names = {
-        str(item.get("path", ""))
-        for item in provenance.get("raw_sources", [])
-        if item.get("stale") is True
-    }
+    stale_names = [str(item) for item in provenance.get("stale_raw_sources", []) if str(item).strip()]
     if stale_names:
         score -= min(35.0, 10.0 * len(stale_names))
         notes.append(f"{len(stale_names)} raw source file(s) exceed freshness threshold")
@@ -87,17 +82,17 @@ def _data_quality(raw_dir: Path, source_report: str, provenance: Dict[str, Any])
         notes.append(f"{len(raw_files)} raw JSON source file(s) available")
 
     score = max(0.0, min(100.0, score))
-    if not notes:
-        notes.append("no obvious source-quality limitation detected")
-    return score, _band(score), notes
+    return score, _band(score), notes or ["no obvious source-quality limitation detected"]
 
 
-def _orbit_context(row: Dict[str, str]) -> tuple[float, str, List[str]]:
+def _orbit_context(row: Dict[str, str]) -> tuple[float, str, List[str], bool]:
+    status = (row.get("orbit_context_status") or "").strip().lower()
+    if status == "not_applicable":
+        return 100.0, "not_applicable", ["orbital context is not applicable to this pattern/window candidate"], True
+
     score = 0.0
     notes: List[str] = []
-
-    status = (row.get("orbit_context_status") or "").strip().lower()
-    if status in {"ok", "matched", "success", "available"}:
+    if status in {"ok", "matched", "success", "available", "enriched"}:
         score += 40
         notes.append("orbit-context lookup available")
     elif status:
@@ -120,32 +115,26 @@ def _orbit_context(row: Dict[str, str]) -> tuple[float, str, List[str]]:
         score += 7.5
 
     score = max(0.0, min(100.0, score))
-    return score, _band(score), notes
+    return score, _band(score), notes, False
 
 
-def _sentry_context(row: Dict[str, str]) -> tuple[float, str, List[str]]:
+def _sentry_context(row: Dict[str, str]) -> tuple[float, str, List[str], bool]:
     status = (row.get("sentry_match_status") or "").strip().lower()
     probability = (row.get("sentry_impact_probability") or "").strip()
-    notes: List[str] = []
 
+    if status == "not_applicable":
+        return 100.0, "not_applicable", ["Sentry cross-check is not applicable to this pattern/window candidate"], True
     if not status:
-        return 15.0, _band(15.0), ["Sentry cross-check status unavailable"]
-
-    if status in {"match", "matched", "yes", "listed", "found"}:
-        score = 100.0
-        notes.append("candidate matched a Sentry record")
+        return 15.0, _band(15.0), ["Sentry cross-check status unavailable"], False
+    if status in {"match", "matched", "matched_sentry", "yes", "listed", "found"}:
+        notes = ["candidate matched a Sentry record"]
         if probability:
             notes.append("Sentry impact-probability field available")
-        return score, _band(score), notes
+        return 100.0, _band(100.0), notes, False
+    if status in {"no_match", "not_found", "not_matched_in_fetched_sentry", "none", "no", "not listed"}:
+        return 80.0, _band(80.0), ["candidate was cross-checked and no Sentry match was found in the fetched table"], False
 
-    if status in {"no_match", "not_found", "none", "no", "not listed"}:
-        score = 80.0
-        notes.append("candidate was cross-checked and no Sentry match was found")
-        return score, _band(score), notes
-
-    score = 45.0
-    notes.append(f"Sentry cross-check status: {status}")
-    return score, _band(score), notes
+    return 45.0, _band(45.0), [f"Sentry cross-check status: {status}"], False
 
 
 def _load_provenance(path: Path) -> Dict[str, Any]:
@@ -180,8 +169,8 @@ def build_confidence_audit(project_root: Path) -> Path:
             candidate.get("source_report", ""),
             provenance,
         )
-        orbit_score, orbit_band, orbit_notes = _orbit_context(orbit)
-        sentry_score, sentry_band, sentry_notes = _sentry_context(orbit)
+        orbit_score, orbit_band, orbit_notes, orbit_na = _orbit_context(orbit)
+        sentry_score, sentry_band, sentry_notes, sentry_na = _sentry_context(orbit)
 
         completeness = round(
             (0.35 * pattern) +
@@ -194,9 +183,9 @@ def build_confidence_audit(project_root: Path) -> Path:
         flags: List[str] = []
         if data_score < 70:
             flags.append("source_quality_limit")
-        if orbit_score < 50:
+        if not orbit_na and orbit_score < 50:
             flags.append("orbit_context_incomplete")
-        if not (orbit.get("sentry_match_status") or "").strip():
+        if not sentry_na and not (orbit.get("sentry_match_status") or "").strip():
             flags.append("sentry_status_unavailable")
         if pattern < 50:
             flags.append("weak_pattern_score")
@@ -212,10 +201,10 @@ def build_confidence_audit(project_root: Path) -> Path:
             "data_quality_score": round(data_score, 2),
             "data_quality_band": data_band,
             "data_quality_notes": "; ".join(data_notes),
-            "orbit_context_score": round(orbit_score, 2),
+            "orbit_context_score": "not_applicable" if orbit_na else round(orbit_score, 2),
             "orbit_context_band": orbit_band,
             "orbit_context_notes": "; ".join(orbit_notes),
-            "sentry_evidence_score": round(sentry_score, 2),
+            "sentry_evidence_score": "not_applicable" if sentry_na else round(sentry_score, 2),
             "sentry_evidence_band": sentry_band,
             "sentry_evidence_notes": "; ".join(sentry_notes),
             "evidence_completeness_index": completeness,
@@ -244,8 +233,9 @@ def build_confidence_audit(project_root: Path) -> Path:
         "The candidate_confidence_audit.csv report separates four different concepts:\n"
         "1. Pattern strength - the existing IuPetra candidate score.\n"
         "2. Data quality - source availability/freshness and report traceability.\n"
-        "3. Orbit context - whether orbital classification, MOID, size, NEO/PHA context were available.\n"
-        "4. Sentry evidence - whether a Sentry cross-check was available and what it reported.\n\n"
+        "3. Orbit context - whether orbital classification, MOID, size, NEO/PHA context were available or applicable.\n"
+        "4. Sentry evidence - whether a Sentry cross-check was available/applicable and what it reported.\n\n"
+        "For pattern/window candidates, orbit or Sentry context may be marked not_applicable rather than treated as missing.\n\n"
         "The evidence-completeness index is NOT an impact probability, hazard score, or official NASA/JPL metric.\n"
         "It only indicates how complete the evidence packet is for human review.\n\n"
         "Audit report:\n"
