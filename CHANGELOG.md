@@ -4,6 +4,18 @@ All notable IuPetra changes should be recorded here.
 
 ## [Unreleased]
 
+### Scientific confidence layer
+
+- Added `candidate_confidence_audit.csv` as a separate post-run evidence-quality report.
+- Separated candidate review into pattern strength, source/data quality, orbital context, and Sentry evidence.
+- Added an evidence-completeness index that measures how complete a review packet is; it is explicitly not a hazard score or impact probability.
+- Added uncertainty flags for weak pattern strength, stale/missing source data, incomplete orbital context, and unavailable Sentry status.
+- Treated `not_applicable` orbital/Sentry context as a completed applicability determination rather than missing evidence.
+- Matched the confidence layer to IuPetra's existing `matched_sentry` and `not_matched_in_fetched_sentry` status vocabulary.
+- Added `SCIENTIFIC_CONFIDENCE_README.txt` to the start-here workspace.
+- Added regression tests for complete and incomplete candidate evidence packets.
+- Kept confidence generation non-fatal so the established analysis/report pipeline remains the authority for run success.
+
 ### Reliability engine pass
 
 - Added a resilient NASA/JPL JSON fetch wrapper with bounded exponential backoff for transient failures.
