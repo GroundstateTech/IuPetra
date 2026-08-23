@@ -1,6 +1,6 @@
 # IuPetra
 
-**IuPetra v1.3.2** is a local asteroid, close-approach, fireball, and orbital-context investigation tool built around public NASA/JPL data.
+**IuPetra v1.3.3** is a local asteroid, close-approach, fireball, and orbital-context investigation tool built around public NASA/JPL data.
 
 It pulls public datasets, normalizes them into local CSV files, looks for repeat activity and time-window patterns, enriches candidate objects with orbital context, cross-checks Sentry data, and generates a browsable local report workspace with an HTML dashboard.
 
@@ -30,6 +30,7 @@ The analysis pipeline produces, among other outputs:
 - object orbital context
 - Sentry cross-checks
 - candidate orbit review
+- scientific confidence/evidence-completeness audit
 - top-candidate packet
 - HTML dashboard and report viewers
 
@@ -45,7 +46,7 @@ IuPetra uses the Python standard library and currently has no third-party packag
 Launch_IuPetra.bat
 ```
 
-The launcher uses the reliability wrapper, runs the data pull/report pipeline, records provenance, and then opens:
+The launcher uses the reliability wrapper, runs the data pull/report pipeline, records provenance, generates the confidence audit, and then opens:
 
 ```text
 reports/00_START_HERE/IuPetra_START_HERE.html
@@ -59,7 +60,7 @@ Recommended run command:
 python run_iupetra.py
 ```
 
-`run_iupetra.py` leaves the scientific/report pipeline unchanged but replaces the network fetch primitive with bounded retry/backoff behavior and records a provenance manifest after the run.
+`run_iupetra.py` leaves the established scientific/report pipeline unchanged, replaces the network fetch primitive with bounded retry/backoff behavior, records a provenance manifest, and adds a separate evidence-completeness audit after successful runs.
 
 The original direct entry point remains available for debugging:
 
@@ -100,6 +101,28 @@ That file records:
 
 The freshness label is diagnostic only. A source marked `stale` means the local raw file is older than the threshold; it does **not** mean the underlying NASA/JPL data are scientifically invalid.
 
+## Scientific confidence layer
+
+After a successful normal run, IuPetra also writes:
+
+```text
+reports/01_EVIDENCE_REVIEW/candidate_confidence_audit.csv
+reports/00_START_HERE/SCIENTIFIC_CONFIDENCE_README.txt
+```
+
+The audit deliberately separates four questions that should not be conflated:
+
+1. **Pattern strength** — the candidate's existing IuPetra heuristic score.
+2. **Data quality** — whether supporting source material is available, traceable, and fresh enough for review.
+3. **Orbital context** — whether catalog/orbit classification, MOID, size, NEO/PHA context are available or applicable.
+4. **Sentry evidence** — whether the candidate was cross-checked against the fetched Sentry table and what that check returned.
+
+The report also emits an **evidence-completeness index** and explicit uncertainty flags. This index measures how complete the review packet is. It is **not** an impact probability, hazard score, Torino/Palermo substitute, or official NASA/JPL risk metric.
+
+For pattern/window candidates, orbital or Sentry context may correctly be marked `not_applicable`; that is treated differently from missing evidence.
+
+The confidence layer is intentionally non-fatal. If it cannot generate its audit, IuPetra preserves the result of the established analysis/report run rather than turning an otherwise successful investigation into a failure.
+
 ## Workspace
 
 ```text
@@ -108,8 +131,8 @@ data/
   clean/               normalized CSV datasets
 
 reports/
-  00_START_HERE/       dashboard, report index, candidate packet
-  01_EVIDENCE_REVIEW/  explained watchlist + research questions
+  00_START_HERE/       dashboard, report index, candidate packet, confidence guide
+  01_EVIDENCE_REVIEW/  explained watchlist, research questions, confidence audit
   02_PATTERN_FINDER/   temporal/repeat/anomaly reports
   03_ORBIT_CONTEXT/    SBDB and Sentry context
   04_SUMMARIES/        yearly/monthly/top-object summaries
@@ -157,7 +180,7 @@ reports/99_TECHNICAL_LOGS/error_log.txt
 Run the local verification suite without calling external APIs:
 
 ```powershell
-python -m py_compile iupetra.py reliability.py run_iupetra.py scripts/doctor.py tests/test_core.py tests/test_reliability.py
+python -m py_compile iupetra.py reliability.py confidence.py run_iupetra.py scripts/doctor.py tests/test_core.py tests/test_reliability.py tests/test_runner.py tests/test_confidence.py
 python scripts/doctor.py
 python -m unittest discover -s tests -v
 ```

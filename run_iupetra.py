@@ -3,6 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 
 import iupetra
+from confidence import build_confidence_audit
 from reliability import reliable_fetch_json, write_provenance
 
 
@@ -11,18 +12,28 @@ def main() -> int:
     # fetch primitive with the retry-aware implementation.
     iupetra.fetch_json = reliable_fetch_json
 
+    project_root = Path(__file__).resolve().parent
     exit_code = 1
     try:
         exit_code = int(iupetra.main())
         return exit_code
     finally:
         try:
-            provenance = write_provenance(Path(__file__).resolve().parent, exit_code)
+            provenance = write_provenance(project_root, exit_code)
             print(f"Run provenance: {provenance}")
         except Exception as exc:
             # Provenance is diagnostic only and must never turn a successful
             # scientific/report run into a failed run.
             print(f"WARNING: could not write run provenance: {exc}")
+
+        if exit_code == 0:
+            try:
+                audit = build_confidence_audit(project_root)
+                print(f"Scientific confidence audit: {audit}")
+            except Exception as exc:
+                # This layer explains evidence completeness; it must not make
+                # an otherwise successful analysis run fail.
+                print(f"WARNING: could not write scientific confidence audit: {exc}")
 
 
 if __name__ == '__main__':
