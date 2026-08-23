@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fastest Close Approaches - IuPetra Viewer</title>
+  <style>
+    :root {
+      --void: #050403;
+      --panel: #17100b;
+      --panel2: #2a1710;
+      --gold: #f4bd52;
+      --amber: #d98736;
+      --cream: #ffe8b9;
+      --ivory: #fff6df;
+      --muted: rgba(255, 232, 185, 0.72);
+      --line: rgba(244, 189, 82, 0.28);
+      --redspot: #b6402d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ivory);
+      font-family: "Trebuchet MS", Arial, sans-serif;
+      background:
+        linear-gradient(180deg, rgba(255,232,185,0.05) 0 8%, rgba(106,63,37,0.20) 8% 19%, rgba(42,23,16,0.40) 19% 38%, rgba(215,111,46,0.12) 38% 48%, rgba(5,4,3,1) 48% 100%),
+        #050403;
+    }
+    header {
+      padding: 28px clamp(18px, 4vw, 54px);
+      border-bottom: 1px solid var(--line);
+      background: rgba(5,4,3,0.72);
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      backdrop-filter: blur(10px);
+    }
+    .topline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--cream);
+      font-size: clamp(1.8rem, 4vw, 3.2rem);
+    }
+    .meta {
+      color: var(--muted);
+      margin-top: 8px;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    a.button {
+      color: #231005;
+      background: linear-gradient(135deg, var(--gold), var(--amber));
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-weight: 800;
+    }
+    a.button.secondary {
+      color: var(--ivory);
+      background: rgba(5,4,3,0.36);
+      border: 1px solid var(--line);
+    }
+    main {
+      padding: 24px clamp(18px, 4vw, 54px) 60px;
+    }
+    .viewer-panel {
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(23,16,11,0.86);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.35);
+      overflow: hidden;
+    }
+    .table-wrap {
+      overflow: auto;
+      max-height: 74vh;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      min-width: 900px;
+    }
+    th, td {
+      border-bottom: 1px solid rgba(255,232,185,0.10);
+      padding: 9px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      position: sticky;
+      top: 0;
+      background: #2a1710;
+      color: var(--gold);
+      z-index: 2;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-size: 0.72rem;
+    }
+    td {
+      color: var(--ivory);
+    }
+    tr:hover td {
+      background: rgba(215,111,46,0.10);
+    }
+    pre {
+      margin: 0;
+      white-space: pre-wrap;
+      padding: 22px;
+      color: var(--ivory);
+      font-family: Consolas, "Courier New", monospace;
+      line-height: 1.5;
+    }
+    .empty, .truncated {
+      color: var(--muted);
+      padding: 22px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topline">
+      <div>
+        <h1>Fastest Close Approaches</h1>
+        <div class="meta">CSV Data Sheet · Fastest close approaches in fetched sample · Source: fastest_close_approaches.csv</div>
+      </div>
+      <div class="actions">
+        <a class="button" href="../00_START_HERE/IuPetra_START_HERE.html">Dashboard</a>
+        <a class="button secondary" href="../04_SUMMARIES/fastest_close_approaches.csv">Open raw file</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="viewer-panel">
+      <div class='table-wrap'><table><thead><tr><th>rank</th><th>object_designation</th><th>object_fullname</th><th>close_approach_datetime_tdb</th><th>year</th><th>distance_au</th><th>velocity_relative_km_s</th><th>velocity_infinity_km_s</th><th>absolute_magnitude_h</th><th>diameter_km</th></tr></thead><tbody><tr><td>1</td><td>620063</td><td>620063 (2009 DH39)</td><td>2004-Feb-26 04:19</td><td>2004</td><td>0.0418918775486614</td><td>32.18798304072</td><td>32.1860069717489</td><td>18.59</td><td></td></tr><tr><td>2</td><td>2021 GF11</td><td>       (2021 GF11)</td><td>2004-Apr-02 18:08</td><td>2004</td><td>0.0442235639058524</td><td>31.4855632210793</td><td>31.4836495805974</td><td>23.38</td><td></td></tr><tr><td>3</td><td>2001 YB5</td><td>       (2001 YB5)</td><td>2002-Jan-07 07:38</td><td>2002</td><td>0.0055625453089654</td><td>30.5883993302741</td><td>30.5727356700177</td><td>20.74</td><td></td></tr><tr><td>4</td><td>2002 TZ59</td><td>       (2002 TZ59)</td><td>2002-Sep-27 21:29</td><td>2002</td><td>0.0164412464098585</td><td>29.5683596045182</td><td>29.562878215267</td><td>23.39</td><td></td></tr><tr><td>5</td><td>2002 AS4</td><td>       (2002 AS4)</td><td>2002-Jan-01 20:33</td><td>2002</td><td>0.0380455066644653</td><td>29.567817333438</td><td>29.5654486495047</td><td>22.26</td><td></td></tr><tr><td>6</td><td>2025 ME90</td><td>       (2025 ME90)</td><td>2004-Jun-30 10:24</td><td>2004</td><td>0.00183709664858941</td><td>29.4627130958772</td><td>29.4134444201653</td><td>21.01</td><td></td></tr><tr><td>7</td><td>2021 SZ4</td><td>       (2021 SZ4)</td><td>2000-Oct-26 12:46</td><td>2000</td><td>0.0420524569270719</td><td>29.1985490719415</td><td>29.1963789914136</td><td>20.47</td><td></td></tr><tr><td>8</td><td>2003 WW26</td><td>       (2003 WW26)</td><td>2003-Nov-16 03:08</td><td>2003</td><td>0.0391368901922533</td><td>27.0035973841594</td><td>27.0010760831701</td><td>22.5</td><td></td></tr><tr><td>9</td><td>37655</td><td> 37655 Illapa (1994 PM)</td><td>2003-Aug-16 14:13</td><td>2003</td><td>0.0250375538363425</td><td>26.3958681129666</td><td>26.3918361393512</td><td>17.85</td><td></td></tr><tr><td>10</td><td>2002 CY9</td><td>       (2002 CY9)</td><td>2002-Jan-26 15:43</td><td>2002</td><td>0.0278169661081652</td><td>26.2437666756721</td><td>26.2401165599745</td><td>19.2</td><td></td></tr><tr><td>11</td><td>385252</td><td>385252 (2001 EB18)</td><td>2002-Aug-30 01:36</td><td>2002</td><td>0.033765716621759</td><td>26.205445628791</td><td>26.2024342194694</td><td>19.41</td><td></td></tr><tr><td>12</td><td>2021 HC3</td><td>       (2021 HC3)</td><td>2002-May-04 02:20</td><td>2002</td><td>0.0496576636579812</td><td>25.9500724973731</td><td>25.9480047151275</td><td>21.57</td><td></td></tr><tr><td>13</td><td>2021 UN3</td><td>       (2021 UN3)</td><td>2001-Mar-18 16:23</td><td>2001</td><td>0.0297113298634806</td><td>25.8603572331385</td><td>25.8568891869911</td><td>21.43</td><td></td></tr><tr><td>14</td><td>2002 MX</td><td>       (2002 MX)</td><td>2002-Jun-12 02:02</td><td>2002</td><td>0.0414805647068123</td><td>25.5731138360195</td><td>25.5706019182705</td><td>21.7</td><td></td></tr><tr><td>15</td><td>2003 RB5</td><td>       (2003 RB5)</td><td>2003-Sep-04 14:03</td><td>2003</td><td>0.0280147621249707</td><td>25.5261529667147</td><td>25.5224267187658</td><td>21.2</td><td></td></tr><tr><td>16</td><td>886662</td><td>886662 (2021 JY)</td><td>2002-Nov-04 04:56</td><td>2002</td><td>0.0461297526024217</td><td>25.4783714869334</td><td>25.4761043440661</td><td>18.80</td><td></td></tr><tr><td>17</td><td>2004 YD5</td><td>       (2004 YD5)</td><td>2004-Dec-19 20:38</td><td>2004</td><td>0.000226525127435088</td><td>25.3540893932745</td><td>24.8858402988563</td><td>29.3</td><td></td></tr><tr><td>18</td><td>434096</td><td>434096 (2002 GO5)</td><td>2002-Apr-04 18:43</td><td>2002</td><td>0.0384593492889383</td><td>24.9725720894501</td><td>24.9697976754024</td><td>18.15</td><td>0.528</td></tr><tr><td>19</td><td>2004 JP12</td><td>       (2004 JP12)</td><td>2004-May-07 16:06</td><td>2004</td><td>0.0336741771565122</td><td>24.8726348075858</td><td>24.8694533850949</td><td>23.60</td><td></td></tr><tr><td>20</td><td>2003 FB5</td><td>       (2003 FB5)</td><td>2003-Apr-03 01:47</td><td>2003</td><td>0.0239180534668211</td><td>24.7811291284357</td><td>24.7766333507207</td><td>23.42</td><td></td></tr><tr><td>21</td><td>496901</td><td>496901 (2001 HB)</td><td>2001-Apr-02 05:07</td><td>2001</td><td>0.0327571456931581</td><td>23.6592565710805</td><td>23.6558183264908</td><td>20.69</td><td></td></tr><tr><td>22</td><td>2020 QL7</td><td>       (2020 QL7)</td><td>2000-Mar-24 00:53</td><td>2000</td><td>0.015429181042908</td><td>23.4583586959299</td><td>23.4509959465242</td><td>22.18</td><td></td></tr><tr><td>23</td><td>2001 EC</td><td>       (2001 EC)</td><td>2001-Feb-26 17:15</td><td>2001</td><td>0.00983441031288086</td><td>22.4934460217711</td><td>22.4813977608294</td><td>18.70</td><td></td></tr><tr><td>24</td><td>2002 CB26</td><td>       (2002 CB26)</td><td>2002-Feb-08 19:11</td><td>2002</td><td>0.00318636053259569</td><td>22.3641040997354</td><td>22.3266818885239</td><td>26.9</td><td></td></tr><tr><td>25</td><td>2004 FD</td><td>       (2004 FD)</td><td>2004-Mar-03 01:21</td><td>2004</td><td>0.0250169385232579</td><td>22.2930938600967</td><td>22.2883157693387</td><td>23.02</td><td></td></tr><tr><td>26</td><td>2004 GE2</td><td>       (2004 GE2)</td><td>2004-Apr-24 13:32</td><td>2004</td><td>0.0332179899747988</td><td>22.2489269801296</td><td>22.2453214832241</td><td>21.5</td><td></td></tr><tr><td>27</td><td>483423</td><td>483423 (2000 DO1)</td><td>2000-Mar-10 02:43</td><td>2000</td><td>0.0262198351080091</td><td>21.9933229492764</td><td>21.9887019364244</td><td>20.53</td><td></td></tr><tr><td>28</td><td>2004 ST26</td><td>       (2004 ST26)</td><td>2004-Sep-21 23:32</td><td>2004</td><td>0.00245709319688152</td><td>21.3803584056318</td><td>21.3295785112717</td><td>26.3</td><td></td></tr><tr><td>29</td><td>2002 NW</td><td>       (2002 NW)</td><td>2002-Jul-11 22:07</td><td>2002</td><td>0.0136517841308885</td><td>21.0555533676775</td><td>21.0462818268896</td><td>24.2</td><td></td></tr><tr><td>30</td><td>2002 UQ12</td><td>       (2002 UQ12)</td><td>2002-Nov-05 23:56</td><td>2002</td><td>0.0281768986027096</td><td>21.0179376919923</td><td>21.0134380748999</td><td>22.39</td><td></td></tr><tr><td>31</td><td>2003 GG21</td><td>       (2003 GG21)</td><td>2003-Apr-03 18:08</td><td>2003</td><td>0.00871706884661906</td><td>20.8964091123857</td><td>20.881776485405</td><td>21.97</td><td></td></tr><tr><td>32</td><td>2002 NY40</td><td>       (2002 NY40)</td><td>2002-Aug-18 07:48</td><td>2002</td><td>0.00352258917648114</td><td>20.8962978875956</td><td>20.8600687785721</td><td>19.0</td><td></td></tr><tr><td>33</td><td>2003 EP4</td><td>       (2003 EP4)</td><td>2003-Mar-12 08:35</td><td>2003</td><td>0.0155789971762752</td><td>20.7506527226555</td><td>20.7424089240669</td><td>23.93</td><td></td></tr><tr><td>34</td><td>2002 VS85</td><td>       (2002 VS85)</td><td>2002-Nov-16 10:17</td><td>2002</td><td>0.0321575884414768</td><td>20.7029095613709</td><td>20.698906986328</td><td>24.1</td><td></td></tr><tr><td>35</td><td>2009 UT19</td><td>       (2009 UT19)</td><td>2004-Nov-04 05:40</td><td>2004</td><td>0.0284425883956725</td><td>20.477745634988</td><td>20.4731704399282</td><td>22.79</td><td></td></tr><tr><td>36</td><td>66391</td><td> 66391 Moshup (1999 KW4)</td><td>2001-May-25 23:31</td><td>2001</td><td>0.03233238931229</td><td>20.4689402728018</td><td>20.4649138264612</td><td>16.64</td><td>1.317</td></tr><tr><td>37</td><td>2025 XS1</td><td>       (2025 XS1)</td><td>2002-Jun-25 00:46</td><td>2002</td><td>0.0282795845847565</td><td>20.3842322061899</td><td>20.3796095220461</td><td>21.85</td><td></td></tr><tr><td>38</td><td>2004 DL1</td><td>       (2004 DL1)</td><td>2004-Feb-09 08:13</td><td>2004</td><td>0.03163516759038</td><td>20.350113486185</td><td>20.3459742562521</td><td>24.4</td><td></td></tr><tr><td>39</td><td>364136</td><td>364136 (2006 CJ)</td><td>2002-Jan-31 12:33</td><td>2002</td><td>0.0315894940545013</td><td>20.178445882802</td><td>20.1742653949839</td><td>20.18</td><td></td></tr><tr><td>40</td><td>2004 SS26</td><td>       (2004 SS26)</td><td>2004-Sep-23 11:25</td><td>2004</td><td>0.040576239127111</td><td>20.1562818217168</td><td>20.1530237154504</td><td>23.1</td><td></td></tr><tr><td>41</td><td>2002 MR3</td><td>       (2002 MR3)</td><td>2002-Jun-29 09:55</td><td>2002</td><td>0.04610644089502</td><td>19.9067087074165</td><td>19.9038054672294</td><td>21.92</td><td></td></tr><tr><td>42</td><td>2018 BB5</td><td>       (2018 BB5)</td><td>2004-Feb-04 22:48</td><td>2004</td><td>0.0285242784246083</td><td>19.8923399951644</td><td>19.8876436167239</td><td>24.4</td><td></td></tr><tr><td>43</td><td>2008 CS1</td><td>       (2008 CS1)</td><td>2001-Aug-07 23:29</td><td>2001</td><td>0.0482670077396294</td><td>19.6760842338963</td><td>19.673278449642</td><td>20.09</td><td></td></tr><tr><td>44</td><td>2003 XK</td><td>       (2003 XK)</td><td>2003-Nov-30 02:39</td><td>2003</td><td>0.0109864448877439</td><td>19.6418887895828</td><td>19.6295376083237</td><td>25.9</td><td></td></tr><tr><td>45</td><td>2004 DF2</td><td>       (2004 DF2)</td><td>2004-Feb-17 00:58</td><td>2004</td><td>0.00728075476838705</td><td>19.5936753925233</td><td>19.5749889260011</td><td>26.1</td><td></td></tr><tr><td>46</td><td>2002 TA67</td><td>       (2002 TA67)</td><td>2002-Oct-04 06:49</td><td>2002</td><td>0.0459469810501596</td><td>19.562797441047</td><td>19.5598329009756</td><td>22.8</td><td></td></tr><tr><td>47</td><td>2019 AY3</td><td>       (2019 AY3)</td><td>2001-May-23 07:34</td><td>2001</td><td>0.0427143901743315</td><td>19.5145608342861</td><td>19.5113640381773</td><td>23.82</td><td></td></tr><tr><td>48</td><td>2004 MP7</td><td>       (2004 MP7)</td><td>2004-Jun-24 08:57</td><td>2004</td><td>0.0298079338209448</td><td>19.5113447685514</td><td>19.5067628825826</td><td>21.7</td><td></td></tr><tr><td>49</td><td>2021 UM5</td><td>       (2021 UM5)</td><td>2003-May-09 15:20</td><td>2003</td><td>0.0452051408650294</td><td>19.3654738378576</td><td>19.3624299367755</td><td>21.64</td><td></td></tr><tr><td>50</td><td>2004 LB2</td><td>       (2004 LB2)</td><td>2004-Jun-14 22:18</td><td>2004</td><td>0.041877015317963</td><td>19.2901668396732</td><td>19.2868681779094</td><td>22.3</td><td></td></tr></tbody></table></div>
+    </section>
+  </main>
+</body>
+</html>

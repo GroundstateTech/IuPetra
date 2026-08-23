@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Report Index - IuPetra Viewer</title>
+  <style>
+    :root {
+      --void: #050403;
+      --panel: #17100b;
+      --panel2: #2a1710;
+      --gold: #f4bd52;
+      --amber: #d98736;
+      --cream: #ffe8b9;
+      --ivory: #fff6df;
+      --muted: rgba(255, 232, 185, 0.72);
+      --line: rgba(244, 189, 82, 0.28);
+      --redspot: #b6402d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ivory);
+      font-family: "Trebuchet MS", Arial, sans-serif;
+      background:
+        linear-gradient(180deg, rgba(255,232,185,0.05) 0 8%, rgba(106,63,37,0.20) 8% 19%, rgba(42,23,16,0.40) 19% 38%, rgba(215,111,46,0.12) 38% 48%, rgba(5,4,3,1) 48% 100%),
+        #050403;
+    }
+    header {
+      padding: 28px clamp(18px, 4vw, 54px);
+      border-bottom: 1px solid var(--line);
+      background: rgba(5,4,3,0.72);
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      backdrop-filter: blur(10px);
+    }
+    .topline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--cream);
+      font-size: clamp(1.8rem, 4vw, 3.2rem);
+    }
+    .meta {
+      color: var(--muted);
+      margin-top: 8px;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    a.button {
+      color: #231005;
+      background: linear-gradient(135deg, var(--gold), var(--amber));
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-weight: 800;
+    }
+    a.button.secondary {
+      color: var(--ivory);
+      background: rgba(5,4,3,0.36);
+      border: 1px solid var(--line);
+    }
+    main {
+      padding: 24px clamp(18px, 4vw, 54px) 60px;
+    }
+    .viewer-panel {
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(23,16,11,0.86);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.35);
+      overflow: hidden;
+    }
+    .table-wrap {
+      overflow: auto;
+      max-height: 74vh;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      min-width: 900px;
+    }
+    th, td {
+      border-bottom: 1px solid rgba(255,232,185,0.10);
+      padding: 9px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      position: sticky;
+      top: 0;
+      background: #2a1710;
+      color: var(--gold);
+      z-index: 2;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-size: 0.72rem;
+    }
+    td {
+      color: var(--ivory);
+    }
+    tr:hover td {
+      background: rgba(215,111,46,0.10);
+    }
+    pre {
+      margin: 0;
+      white-space: pre-wrap;
+      padding: 22px;
+      color: var(--ivory);
+      font-family: Consolas, "Courier New", monospace;
+      line-height: 1.5;
+    }
+    .empty, .truncated {
+      color: var(--muted);
+      padding: 22px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topline">
+      <div>
+        <h1>Report Index</h1>
+        <div class="meta">CSV Data Sheet · Map of every report · Source: REPORT_INDEX.csv</div>
+      </div>
+      <div class="actions">
+        <a class="button" href="../00_START_HERE/IuPetra_START_HERE.html">Dashboard</a>
+        <a class="button secondary" href="../00_START_HERE/REPORT_INDEX.csv">Open raw file</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="viewer-panel">
+      <div class='table-wrap'><table><thead><tr><th>folder</th><th>file</th><th>purpose</th><th>open_first</th></tr></thead><tbody><tr><td>reports/00_START_HERE</td><td>IuPetra_START_HERE.html</td><td>Visual dashboard for navigating the run.</td><td>yes</td></tr><tr><td>reports/00_START_HERE</td><td>README_START_HERE.txt</td><td>Plain-language navigation guide for the whole run.</td><td>yes</td></tr><tr><td>reports/00_START_HERE</td><td>top_candidate_packet.txt</td><td>Human-readable packet of top watchlist candidates, evidence, limitations, and next checks.</td><td>yes</td></tr><tr><td>reports/00_START_HERE</td><td>REPORT_INDEX.csv</td><td>Map of where all organized reports live.</td><td>yes</td></tr><tr><td>reports/01_EVIDENCE_REVIEW</td><td>watchlist_explained.csv</td><td>Detailed explanations for each watchlist candidate.</td><td>yes</td></tr><tr><td>reports/01_EVIDENCE_REVIEW</td><td>research_questions.csv</td><td>Follow-up research questions for top candidates.</td><td>yes</td></tr><tr><td>reports/02_PATTERN_FINDER</td><td>watchlist_candidates.csv</td><td>Combined pattern-finder candidate list.</td><td>no</td></tr><tr><td>reports/02_PATTERN_FINDER</td><td>fireball_month_clusters.csv</td><td>Ranks months by fireball activity and energy.</td><td>no</td></tr><tr><td>reports/02_PATTERN_FINDER</td><td>repeating_close_approach_objects.csv</td><td>Objects appearing multiple times in close-approach data.</td><td>no</td></tr><tr><td>reports/02_PATTERN_FINDER</td><td>high_energy_fireball_windows.csv</td><td>Groups higher-energy fireballs into short windows.</td><td>no</td></tr><tr><td>reports/02_PATTERN_FINDER</td><td>close_approach_windows.csv</td><td>Groups close asteroid/comet approaches into short windows.</td><td>no</td></tr><tr><td>reports/03_ORBIT_CONTEXT</td><td>object_orbit_context.csv</td><td>JPL SBDB orbital context for selected cataloged objects.</td><td>no</td></tr><tr><td>reports/03_ORBIT_CONTEXT</td><td>sentry_crosscheck.csv</td><td>Crosscheck against current fetched CNEOS Sentry table.</td><td>no</td></tr><tr><td>reports/03_ORBIT_CONTEXT</td><td>candidate_orbit_review.csv</td><td>Joined review: candidate + orbit context + Sentry status.</td><td>yes</td></tr><tr><td>reports/04_SUMMARIES</td><td>yearly_activity_index.csv</td><td>Relative yearly anomaly-hunting score.</td><td>no</td></tr><tr><td>reports/04_SUMMARIES</td><td>fireball_yearly_summary.csv</td><td>Fireball counts and energy by year.</td><td>no</td></tr><tr><td>reports/04_SUMMARIES</td><td>fireball_monthly_summary.csv</td><td>Fireball counts and energy by year/month.</td><td>no</td></tr><tr><td>reports/04_SUMMARIES</td><td>largest_fireballs.csv</td><td>Largest fireball events in the fetched sample.</td><td>no</td></tr><tr><td>reports/04_SUMMARIES</td><td>close_approach_yearly_summary.csv</td><td>Close-approach counts and extremes by year.</td><td>no</td></tr><tr><td>reports/04_SUMMARIES</td><td>closest_approaches.csv</td><td>Closest approaches in the fetched sample.</td><td>no</td></tr><tr><td>reports/04_SUMMARIES</td><td>fastest_close_approaches.csv</td><td>Fastest close approaches in the fetched sample.</td><td>no</td></tr><tr><td>reports/04_SUMMARIES</td><td>sentry_summary.csv</td><td>Summary of fetched Sentry risk table.</td><td>no</td></tr><tr><td>reports/99_TECHNICAL_LOGS</td><td>run_manifest.csv</td><td>Run settings, thresholds, API URLs, and warnings.</td><td>no</td></tr></tbody></table></div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Run Manifest - IuPetra Viewer</title>
+  <style>
+    :root {
+      --void: #050403;
+      --panel: #17100b;
+      --panel2: #2a1710;
+      --gold: #f4bd52;
+      --amber: #d98736;
+      --cream: #ffe8b9;
+      --ivory: #fff6df;
+      --muted: rgba(255, 232, 185, 0.72);
+      --line: rgba(244, 189, 82, 0.28);
+      --redspot: #b6402d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ivory);
+      font-family: "Trebuchet MS", Arial, sans-serif;
+      background:
+        linear-gradient(180deg, rgba(255,232,185,0.05) 0 8%, rgba(106,63,37,0.20) 8% 19%, rgba(42,23,16,0.40) 19% 38%, rgba(215,111,46,0.12) 38% 48%, rgba(5,4,3,1) 48% 100%),
+        #050403;
+    }
+    header {
+      padding: 28px clamp(18px, 4vw, 54px);
+      border-bottom: 1px solid var(--line);
+      background: rgba(5,4,3,0.72);
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      backdrop-filter: blur(10px);
+    }
+    .topline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--cream);
+      font-size: clamp(1.8rem, 4vw, 3.2rem);
+    }
+    .meta {
+      color: var(--muted);
+      margin-top: 8px;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    a.button {
+      color: #231005;
+      background: linear-gradient(135deg, var(--gold), var(--amber));
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-weight: 800;
+    }
+    a.button.secondary {
+      color: var(--ivory);
+      background: rgba(5,4,3,0.36);
+      border: 1px solid var(--line);
+    }
+    main {
+      padding: 24px clamp(18px, 4vw, 54px) 60px;
+    }
+    .viewer-panel {
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(23,16,11,0.86);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.35);
+      overflow: hidden;
+    }
+    .table-wrap {
+      overflow: auto;
+      max-height: 74vh;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      min-width: 900px;
+    }
+    th, td {
+      border-bottom: 1px solid rgba(255,232,185,0.10);
+      padding: 9px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      position: sticky;
+      top: 0;
+      background: #2a1710;
+      color: var(--gold);
+      z-index: 2;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-size: 0.72rem;
+    }
+    td {
+      color: var(--ivory);
+    }
+    tr:hover td {
+      background: rgba(215,111,46,0.10);
+    }
+    pre {
+      margin: 0;
+      white-space: pre-wrap;
+      padding: 22px;
+      color: var(--ivory);
+      font-family: Consolas, "Courier New", monospace;
+      line-height: 1.5;
+    }
+    .empty, .truncated {
+      color: var(--muted);
+      padding: 22px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topline">
+      <div>
+        <h1>Run Manifest</h1>
+        <div class="meta">CSV Data Sheet · Settings, thresholds, and API metadata · Source: run_manifest.csv</div>
+      </div>
+      <div class="actions">
+        <a class="button" href="../00_START_HERE/IuPetra_START_HERE.html">Dashboard</a>
+        <a class="button secondary" href="../99_TECHNICAL_LOGS/run_manifest.csv">Open raw file</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="viewer-panel">
+      <div class='table-wrap'><table><thead><tr><th>field</th><th>value</th></tr></thead><tbody><tr><td>script_version</td><td>IuPetra v1.3.1</td></tr><tr><td>run_time_utc</td><td>2026-06-10 18:53:15 UTC</td></tr><tr><td>fireball_limit</td><td>500</td></tr><tr><td>close_approach_date_min</td><td>2000-01-01</td></tr><tr><td>close_approach_date_max</td><td>2035-01-01</td></tr><tr><td>close_approach_distance_max_au</td><td>0.05</td></tr><tr><td>close_approach_limit</td><td>1000</td></tr><tr><td>top_report_limit</td><td>50</td></tr><tr><td>high_energy_fireball_kt_threshold</td><td>0.1</td></tr><tr><td>high_energy_window_days</td><td>14</td></tr><tr><td>close_approach_window_days</td><td>14</td></tr><tr><td>close_approach_cluster_distance_au</td><td>0.02</td></tr><tr><td>repeat_object_min_count</td><td>2</td></tr><tr><td>watchlist_min_score</td><td>40.0</td></tr><tr><td>top_candidate_packet_limit</td><td>10</td></tr><tr><td>fireball_rows_saved</td><td>500</td></tr><tr><td>close_approach_rows_saved</td><td>1000</td></tr><tr><td>sentry_rows_saved</td><td>2152</td></tr><tr><td>settings_loaded_keys</td><td>close_approach_cluster_distance_au, close_approach_date_max, close_approach_date_min, close_approach_distance_max_au, close_approach_limit, close_approach_window_days, fireball_limit, high_energy_fireball_kt_threshold, high_energy_window_days, repeat_object_min_count, sbdb_enrichment_limit, top_candidate_packet_limit, top_report_limit, watchlist_min_score</td></tr><tr><td>fireball_api_url</td><td>https://ssd-api.jpl.nasa.gov/fireball.api</td></tr><tr><td>close_approach_api_url</td><td>https://ssd-api.jpl.nasa.gov/cad.api</td></tr><tr><td>sentry_api_url</td><td>https://ssd-api.jpl.nasa.gov/sentry.api</td></tr><tr><td>sbdb_api_url</td><td>https://ssd-api.jpl.nasa.gov/sbdb.api</td></tr><tr><td>sbdb_enrichment_limit</td><td>25</td></tr><tr><td>activity_score_warning</td><td>Relative anomaly-hunting score only. It is not a formal impact-risk metric.</td></tr><tr><td>watchlist_warning</td><td>Pattern-finder candidates only. These are not official hazard predictions.</td></tr><tr><td>evidence_review_warning</td><td>Evidence review explains why a candidate was flagged; it does not validate a causal hypothesis.</td></tr><tr><td>orbit_context_warning</td><td>SBDB enrichment is a context lookup. It does not replace official risk analysis.</td></tr><tr><td>workspace_organization</td><td>Reports are written directly into categorized subfolders. Root reports/ is only a container.</td></tr><tr><td>dashboard_html</td><td>C:\Users\drdix\OneDrive\Desktop\IuPetra\reports\00_START_HERE\IuPetra_START_HERE.html</td></tr></tbody></table></div>
+    </section>
+  </main>
+</body>
+</html>

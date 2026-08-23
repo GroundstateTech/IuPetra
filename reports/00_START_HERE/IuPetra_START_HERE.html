@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IuPetra</title>
+  <link rel="stylesheet" href="iupetra-dashboard.css" />
+</head>
+<body>
+  <div class="jovian-atmosphere" aria-hidden="true"></div>
+  <div class="app-shell">
+    <aside class="left-rail">
+      <div class="brand-mark" aria-label="IuPetra">IP</div>
+      <nav class="rail-nav" aria-label="IuPetra dashboard navigation">
+        <a href="#command">Command</a>
+        <a href="#redspot">Lead</a>
+        <a href="#evidence">Evidence</a>
+        <a href="#orbit">Orbit</a>
+        <a href="#reports">Reports</a>
+      </nav>
+      <div class="rail-footer"><span>GROUNDSTATE</span><span>IUPETRA</span></div>
+    </aside>
+
+    <main class="main-deck">
+      <section id="command" class="hero-panel">
+        <div class="hero-copy">
+          <p class="eyebrow">Groundstate Technology</p>
+          <h1>IuPetra</h1>
+          <p class="hero-text">
+            This run pulled 500 fireball rows, 1,000 close-approach rows,
+            and 2,152 Sentry rows. IuPetra found 225 watchlist candidates,
+            built 225 orbit-review rows, and generated 20 follow-up research questions.
+          </p>
+          <p class="generated-stamp">Generated 2026-06-10 18:53:15 UTC · Fireballs: 500 max · close approaches: 2000-01-01 to 2035-01-01, within 0.05 au · watchlist threshold: 40.</p>
+          <div class="hero-actions">
+            <a class="primary-action" href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/top_candidate_packet.txt.html">Read the run packet</a>
+            <a class="secondary-action" href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/REPORT_INDEX.csv.html">Open report index</a>
+          </div>
+        </div>
+        <div class="jupiter-system" aria-label="Stylized Jupiter system">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+          <div class="jupiter"><div class="great-red-spot"></div></div>
+          <span class="moon moon-one"></span><span class="moon moon-two"></span><span class="moon moon-three"></span>
+        </div>
+      </section>
+
+      <section class="quick-stats" aria-label="Run highlights">
+        <article><span class="stat-label">Top lead</span><strong>Top lead: HEF_0011 · score 100.0 · high relative priority.</strong><p>Open the packet for the complete explanation and limitations.</p></article>
+        <article><span class="stat-label">Orbit review</span><strong>First orbit review: HEF_0011 · orbit class not returned · not_applicable.</strong><p>Object context is shown only where catalog data is available.</p></article>
+        <article><span class="stat-label">Controls</span><strong>settings.json</strong><p>Fireballs: 500 max · close approaches: 2000-01-01 to 2035-01-01, within 0.05 au · watchlist threshold: 40.</p></article>
+      </section>
+
+      <section id="redspot" class="redspot-layout">
+        <div class="redspot-core">
+          <p class="eyebrow">Great Red Spot</p>
+          <h2>Primary lead from this run</h2>
+          <p>Top lead: HEF_0011 · score 100.0 · high relative priority. The packet is the cleanest starting point because it summarizes evidence, limitations, and what to check next.</p>
+          <a class="panel-link" href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/top_candidate_packet.txt.html">Read the packet</a>
+        </div>
+        <div class="redspot-ring">
+          <a href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/watchlist_explained.csv.html"><strong>Evidence Vault</strong><span>225 explained candidates</span></a>
+          <a href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/candidate_orbit_review.csv.html"><strong>Orbital Tribunal</strong><span>225 orbit-review rows</span></a>
+          <a href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/research_questions.csv.html"><strong>Question Forge</strong><span>20 generated research questions</span></a>
+        </div>
+      </section>
+
+      <section id="evidence" class="zone-grid">
+        <article class="zone-card large-card">
+          <div class="zone-header"><span class="zone-number">01</span><h2>Evidence Review</h2></div>
+          <p>Use this section to see why a candidate was flagged, what supports it, and what weakens the case.</p>
+          <div class="link-list">
+            <a href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/watchlist_explained.csv.html">watchlist_explained.csv viewer</a>
+            <a href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/research_questions.csv.html">research_questions.csv viewer</a>
+            <a href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/top_candidate_packet.txt.html">top_candidate_packet.txt viewer</a>
+          </div>
+        </article>
+        <article id="orbit" class="zone-card">
+          <div class="zone-header"><span class="zone-number">02</span><h2>Orbit Context</h2></div>
+          <p>First orbit review: HEF_0011 · orbit class not returned · not_applicable.</p>
+          <div class="link-list">
+            <a href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/candidate_orbit_review.csv.html">candidate_orbit_review.csv viewer</a>
+            <a href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/object_orbit_context.csv.html">object_orbit_context.csv viewer</a>
+            <a href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/sentry_crosscheck.csv.html">sentry_crosscheck.csv viewer</a>
+          </div>
+        </article>
+        <article class="zone-card">
+          <div class="zone-header"><span class="zone-number">03</span><h2>Pattern Finder</h2></div>
+          <p>These sheets are the machinery behind the watchlist: repeated months, short windows, and repeat visitors.</p>
+          <div class="link-list">
+            <a href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/watchlist_candidates.csv.html">watchlist_candidates.csv viewer</a>
+            <a href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/fireball_month_clusters.csv.html">fireball_month_clusters.csv viewer</a>
+            <a href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/repeating_close_approach_objects.csv.html">repeating_close_approach_objects.csv viewer</a>
+            <a href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/high_energy_fireball_windows.csv.html">high_energy_fireball_windows.csv viewer</a>
+            <a href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/close_approach_windows.csv.html">close_approach_windows.csv viewer</a>
+          </div>
+        </article>
+      </section>
+
+      <section id="reports" class="report-bands">
+        <div class="band-title"><p class="eyebrow">Archive Bands</p><h2>Report zones</h2></div>
+        <div class="band-list">
+          <a class="band-row start" href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/REPORT_INDEX.csv.html"><span>00</span><strong>Start Here</strong><em>Dashboard, packet, and index</em></a>
+          <a class="band-row evidence" href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/watchlist_explained.csv.html"><span>01</span><strong>Evidence Review</strong><em>225 explained candidates</em></a>
+          <a class="band-row pattern" href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/watchlist_candidates.csv.html"><span>02</span><strong>Pattern Finder</strong><em>Clusters, windows, repeat visitors</em></a>
+          <a class="band-row orbit" href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/candidate_orbit_review.csv.html"><span>03</span><strong>Orbit Context</strong><em>225 orbit-review rows</em></a>
+          <a class="band-row summary" href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/yearly_activity_index.csv.html"><span>04</span><strong>Summaries</strong><em>500 fireballs · 1,000 approaches</em></a>
+          <a class="band-row logs" href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/run_manifest.csv.html"><span>99</span><strong>Technical Logs</strong><em>Settings, thresholds, run manifest</em></a>
+        </div>
+      </section>
+
+      <section class="zone-grid">
+        <article class="zone-card">
+          <div class="zone-header"><span class="zone-number">04</span><h2>Summary Tables</h2></div>
+          <div class="link-list">
+            <a href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/yearly_activity_index.csv.html">yearly_activity_index.csv viewer</a>
+            <a href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/fireball_yearly_summary.csv.html">fireball_yearly_summary.csv viewer</a>
+            <a href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/fireball_monthly_summary.csv.html">fireball_monthly_summary.csv viewer</a>
+            <a href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/largest_fireballs.csv.html">largest_fireballs.csv viewer</a>
+            <a href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/close_approach_yearly_summary.csv.html">close_approach_yearly_summary.csv viewer</a>
+            <a href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/closest_approaches.csv.html">closest_approaches.csv viewer</a>
+            <a href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/fastest_close_approaches.csv.html">fastest_close_approaches.csv viewer</a>
+            <a href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/sentry_summary.csv.html">sentry_summary.csv viewer</a>
+          </div>
+        </article>
+        <article class="zone-card">
+          <div class="zone-header"><span class="zone-number">⚙</span><h2>Controls + Logs</h2></div>
+          <div class="link-list">
+            <a href="../../settings.json">settings.json</a>
+            <a href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/run_manifest.csv.html">run_manifest.csv viewer</a>
+            <a href="C:/Users/drdix/OneDrive/Desktop/IuPetra/reports/HTML_VIEWERS/README_START_HERE.txt.html">README_START_HERE.txt viewer</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="caution-panel">
+        <strong>Boundary note</strong>
+        <p>IuPetra highlights leads for review. It does not issue impact predictions. Use the Sentry crosscheck and official NASA/JPL CNEOS sources before treating any candidate as risk-significant.</p>
+      </section>
+    </main>
+  </div>
+</body>
+ <footer>IuPetra · Built by Groundstate Technology · Turning public celestial data into local investigative intelligence.</footer>
+ </html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Close-Approach Yearly Summary - IuPetra Viewer</title>
+  <style>
+    :root {
+      --void: #050403;
+      --panel: #17100b;
+      --panel2: #2a1710;
+      --gold: #f4bd52;
+      --amber: #d98736;
+      --cream: #ffe8b9;
+      --ivory: #fff6df;
+      --muted: rgba(255, 232, 185, 0.72);
+      --line: rgba(244, 189, 82, 0.28);
+      --redspot: #b6402d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ivory);
+      font-family: "Trebuchet MS", Arial, sans-serif;
+      background:
+        linear-gradient(180deg, rgba(255,232,185,0.05) 0 8%, rgba(106,63,37,0.20) 8% 19%, rgba(42,23,16,0.40) 19% 38%, rgba(215,111,46,0.12) 38% 48%, rgba(5,4,3,1) 48% 100%),
+        #050403;
+    }
+    header {
+      padding: 28px clamp(18px, 4vw, 54px);
+      border-bottom: 1px solid var(--line);
+      background: rgba(5,4,3,0.72);
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      backdrop-filter: blur(10px);
+    }
+    .topline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--cream);
+      font-size: clamp(1.8rem, 4vw, 3.2rem);
+    }
+    .meta {
+      color: var(--muted);
+      margin-top: 8px;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    a.button {
+      color: #231005;
+      background: linear-gradient(135deg, var(--gold), var(--amber));
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-weight: 800;
+    }
+    a.button.secondary {
+      color: var(--ivory);
+      background: rgba(5,4,3,0.36);
+      border: 1px solid var(--line);
+    }
+    main {
+      padding: 24px clamp(18px, 4vw, 54px) 60px;
+    }
+    .viewer-panel {
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(23,16,11,0.86);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.35);
+      overflow: hidden;
+    }
+    .table-wrap {
+      overflow: auto;
+      max-height: 74vh;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      min-width: 900px;
+    }
+    th, td {
+      border-bottom: 1px solid rgba(255,232,185,0.10);
+      padding: 9px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      position: sticky;
+      top: 0;
+      background: #2a1710;
+      color: var(--gold);
+      z-index: 2;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-size: 0.72rem;
+    }
+    td {
+      color: var(--ivory);
+    }
+    tr:hover td {
+      background: rgba(215,111,46,0.10);
+    }
+    pre {
+      margin: 0;
+      white-space: pre-wrap;
+      padding: 22px;
+      color: var(--ivory);
+      font-family: Consolas, "Courier New", monospace;
+      line-height: 1.5;
+    }
+    .empty, .truncated {
+      color: var(--muted);
+      padding: 22px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topline">
+      <div>
+        <h1>Close-Approach Yearly Summary</h1>
+        <div class="meta">CSV Data Sheet · Close approach yearly counts and extremes · Source: close_approach_yearly_summary.csv</div>
+      </div>
+      <div class="actions">
+        <a class="button" href="../00_START_HERE/IuPetra_START_HERE.html">Dashboard</a>
+        <a class="button secondary" href="../04_SUMMARIES/close_approach_yearly_summary.csv">Open raw file</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="viewer-panel">
+      <div class='table-wrap'><table><thead><tr><th>year</th><th>close_approach_count</th><th>minimum_distance_au</th><th>maximum_velocity_relative_km_s</th></tr></thead><tbody><tr><td>2000</td><td>154</td><td>0.001795695641</td><td>29.198549</td></tr><tr><td>2001</td><td>168</td><td>0.000803236221</td><td>25.860357</td></tr><tr><td>2002</td><td>206</td><td>0.000786724919</td><td>30.588399</td></tr><tr><td>2003</td><td>197</td><td>0.000563056369</td><td>27.003597</td></tr><tr><td>2004</td><td>259</td><td>8.6318969e-05</td><td>32.187983</td></tr><tr><td>2005</td><td>16</td><td>0.001755327691</td><td>17.022912</td></tr></tbody></table></div>
+    </section>
+  </main>
+</body>
+</html>

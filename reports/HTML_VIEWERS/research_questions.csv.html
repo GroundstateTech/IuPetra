@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research Questions - IuPetra Viewer</title>
+  <style>
+    :root {
+      --void: #050403;
+      --panel: #17100b;
+      --panel2: #2a1710;
+      --gold: #f4bd52;
+      --amber: #d98736;
+      --cream: #ffe8b9;
+      --ivory: #fff6df;
+      --muted: rgba(255, 232, 185, 0.72);
+      --line: rgba(244, 189, 82, 0.28);
+      --redspot: #b6402d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ivory);
+      font-family: "Trebuchet MS", Arial, sans-serif;
+      background:
+        linear-gradient(180deg, rgba(255,232,185,0.05) 0 8%, rgba(106,63,37,0.20) 8% 19%, rgba(42,23,16,0.40) 19% 38%, rgba(215,111,46,0.12) 38% 48%, rgba(5,4,3,1) 48% 100%),
+        #050403;
+    }
+    header {
+      padding: 28px clamp(18px, 4vw, 54px);
+      border-bottom: 1px solid var(--line);
+      background: rgba(5,4,3,0.72);
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      backdrop-filter: blur(10px);
+    }
+    .topline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--cream);
+      font-size: clamp(1.8rem, 4vw, 3.2rem);
+    }
+    .meta {
+      color: var(--muted);
+      margin-top: 8px;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    a.button {
+      color: #231005;
+      background: linear-gradient(135deg, var(--gold), var(--amber));
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-weight: 800;
+    }
+    a.button.secondary {
+      color: var(--ivory);
+      background: rgba(5,4,3,0.36);
+      border: 1px solid var(--line);
+    }
+    main {
+      padding: 24px clamp(18px, 4vw, 54px) 60px;
+    }
+    .viewer-panel {
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(23,16,11,0.86);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.35);
+      overflow: hidden;
+    }
+    .table-wrap {
+      overflow: auto;
+      max-height: 74vh;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      min-width: 900px;
+    }
+    th, td {
+      border-bottom: 1px solid rgba(255,232,185,0.10);
+      padding: 9px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      position: sticky;
+      top: 0;
+      background: #2a1710;
+      color: var(--gold);
+      z-index: 2;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-size: 0.72rem;
+    }
+    td {
+      color: var(--ivory);
+    }
+    tr:hover td {
+      background: rgba(215,111,46,0.10);
+    }
+    pre {
+      margin: 0;
+      white-space: pre-wrap;
+      padding: 22px;
+      color: var(--ivory);
+      font-family: Consolas, "Courier New", monospace;
+      line-height: 1.5;
+    }
+    .empty, .truncated {
+      color: var(--muted);
+      padding: 22px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topline">
+      <div>
+        <h1>Research Questions</h1>
+        <div class="meta">CSV Data Sheet · Follow-up research questions · Source: research_questions.csv</div>
+      </div>
+      <div class="actions">
+        <a class="button" href="../00_START_HERE/IuPetra_START_HERE.html">Dashboard</a>
+        <a class="button secondary" href="../01_EVIDENCE_REVIEW/research_questions.csv">Open raw file</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="viewer-panel">
+      <div class='table-wrap'><table><thead><tr><th>priority</th><th>candidate_id</th><th>candidate_type</th><th>research_question</th><th>why_it_matters</th><th>suggested_next_data_source</th></tr></thead><tbody><tr><td>1</td><td>HEF_0011</td><td>high_energy_fireball_window</td><td>Do the events in HEF_0011 line up with a known meteor stream?</td><td>This tests whether a clustered high-energy window has a plausible parent stream.</td><td>IAU Meteor Data Center / CNEOS Fireball API</td></tr><tr><td>2</td><td>HEF_0011</td><td>high_energy_fireball_window</td><td>Is the window dominated by one event or multiple comparable events?</td><td>This distinguishes a true cluster from a single outlier.</td><td>largest_fireballs.csv and high_energy_fireball_windows.csv</td></tr><tr><td>3</td><td>HEF_0097</td><td>high_energy_fireball_window</td><td>Do the events in HEF_0097 line up with a known meteor stream?</td><td>This tests whether a clustered high-energy window has a plausible parent stream.</td><td>IAU Meteor Data Center / CNEOS Fireball API</td></tr><tr><td>4</td><td>HEF_0097</td><td>high_energy_fireball_window</td><td>Is the window dominated by one event or multiple comparable events?</td><td>This distinguishes a true cluster from a single outlier.</td><td>largest_fireballs.csv and high_energy_fireball_windows.csv</td></tr><tr><td>5</td><td>HEF_0055</td><td>high_energy_fireball_window</td><td>Do the events in HEF_0055 line up with a known meteor stream?</td><td>This tests whether a clustered high-energy window has a plausible parent stream.</td><td>IAU Meteor Data Center / CNEOS Fireball API</td></tr><tr><td>6</td><td>HEF_0055</td><td>high_energy_fireball_window</td><td>Is the window dominated by one event or multiple comparable events?</td><td>This distinguishes a true cluster from a single outlier.</td><td>largest_fireballs.csv and high_energy_fireball_windows.csv</td></tr><tr><td>7</td><td>HEF_0125</td><td>high_energy_fireball_window</td><td>Do the events in HEF_0125 line up with a known meteor stream?</td><td>This tests whether a clustered high-energy window has a plausible parent stream.</td><td>IAU Meteor Data Center / CNEOS Fireball API</td></tr><tr><td>8</td><td>HEF_0125</td><td>high_energy_fireball_window</td><td>Is the window dominated by one event or multiple comparable events?</td><td>This distinguishes a true cluster from a single outlier.</td><td>largest_fireballs.csv and high_energy_fireball_windows.csv</td></tr><tr><td>9</td><td>HEF_0013</td><td>high_energy_fireball_window</td><td>Do the events in HEF_0013 line up with a known meteor stream?</td><td>This tests whether a clustered high-energy window has a plausible parent stream.</td><td>IAU Meteor Data Center / CNEOS Fireball API</td></tr><tr><td>10</td><td>HEF_0013</td><td>high_energy_fireball_window</td><td>Is the window dominated by one event or multiple comparable events?</td><td>This distinguishes a true cluster from a single outlier.</td><td>largest_fireballs.csv and high_energy_fireball_windows.csv</td></tr><tr><td>11</td><td>HEF_0081</td><td>high_energy_fireball_window</td><td>Do the events in HEF_0081 line up with a known meteor stream?</td><td>This tests whether a clustered high-energy window has a plausible parent stream.</td><td>IAU Meteor Data Center / CNEOS Fireball API</td></tr><tr><td>12</td><td>HEF_0081</td><td>high_energy_fireball_window</td><td>Is the window dominated by one event or multiple comparable events?</td><td>This distinguishes a true cluster from a single outlier.</td><td>largest_fireballs.csv and high_energy_fireball_windows.csv</td></tr><tr><td>13</td><td>HEF_0140</td><td>high_energy_fireball_window</td><td>Do the events in HEF_0140 line up with a known meteor stream?</td><td>This tests whether a clustered high-energy window has a plausible parent stream.</td><td>IAU Meteor Data Center / CNEOS Fireball API</td></tr><tr><td>14</td><td>HEF_0140</td><td>high_energy_fireball_window</td><td>Is the window dominated by one event or multiple comparable events?</td><td>This distinguishes a true cluster from a single outlier.</td><td>largest_fireballs.csv and high_energy_fireball_windows.csv</td></tr><tr><td>15</td><td>HEF_0093</td><td>high_energy_fireball_window</td><td>Do the events in HEF_0093 line up with a known meteor stream?</td><td>This tests whether a clustered high-energy window has a plausible parent stream.</td><td>IAU Meteor Data Center / CNEOS Fireball API</td></tr><tr><td>16</td><td>HEF_0093</td><td>high_energy_fireball_window</td><td>Is the window dominated by one event or multiple comparable events?</td><td>This distinguishes a true cluster from a single outlier.</td><td>largest_fireballs.csv and high_energy_fireball_windows.csv</td></tr><tr><td>17</td><td>HEF_0036</td><td>high_energy_fireball_window</td><td>Do the events in HEF_0036 line up with a known meteor stream?</td><td>This tests whether a clustered high-energy window has a plausible parent stream.</td><td>IAU Meteor Data Center / CNEOS Fireball API</td></tr><tr><td>18</td><td>HEF_0036</td><td>high_energy_fireball_window</td><td>Is the window dominated by one event or multiple comparable events?</td><td>This distinguishes a true cluster from a single outlier.</td><td>largest_fireballs.csv and high_energy_fireball_windows.csv</td></tr><tr><td>19</td><td>HEF_0148</td><td>high_energy_fireball_window</td><td>Do the events in HEF_0148 line up with a known meteor stream?</td><td>This tests whether a clustered high-energy window has a plausible parent stream.</td><td>IAU Meteor Data Center / CNEOS Fireball API</td></tr><tr><td>20</td><td>HEF_0148</td><td>high_energy_fireball_window</td><td>Is the window dominated by one event or multiple comparable events?</td><td>This distinguishes a true cluster from a single outlier.</td><td>largest_fireballs.csv and high_energy_fireball_windows.csv</td></tr></tbody></table></div>
+    </section>
+  </main>
+</body>
+</html>

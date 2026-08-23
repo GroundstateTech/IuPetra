@@ -1,0 +1,24 @@
+folder,file,purpose,open_first
+reports/00_START_HERE,IuPetra_START_HERE.html,Visual dashboard for navigating the run.,yes
+reports/00_START_HERE,README_START_HERE.txt,Plain-language navigation guide for the whole run.,yes
+reports/00_START_HERE,top_candidate_packet.txt,"Human-readable packet of top watchlist candidates, evidence, limitations, and next checks.",yes
+reports/00_START_HERE,REPORT_INDEX.csv,Map of where all organized reports live.,yes
+reports/01_EVIDENCE_REVIEW,watchlist_explained.csv,Detailed explanations for each watchlist candidate.,yes
+reports/01_EVIDENCE_REVIEW,research_questions.csv,Follow-up research questions for top candidates.,yes
+reports/02_PATTERN_FINDER,watchlist_candidates.csv,Combined pattern-finder candidate list.,no
+reports/02_PATTERN_FINDER,fireball_month_clusters.csv,Ranks months by fireball activity and energy.,no
+reports/02_PATTERN_FINDER,repeating_close_approach_objects.csv,Objects appearing multiple times in close-approach data.,no
+reports/02_PATTERN_FINDER,high_energy_fireball_windows.csv,Groups higher-energy fireballs into short windows.,no
+reports/02_PATTERN_FINDER,close_approach_windows.csv,Groups close asteroid/comet approaches into short windows.,no
+reports/03_ORBIT_CONTEXT,object_orbit_context.csv,JPL SBDB orbital context for selected cataloged objects.,no
+reports/03_ORBIT_CONTEXT,sentry_crosscheck.csv,Crosscheck against current fetched CNEOS Sentry table.,no
+reports/03_ORBIT_CONTEXT,candidate_orbit_review.csv,Joined review: candidate + orbit context + Sentry status.,yes
+reports/04_SUMMARIES,yearly_activity_index.csv,Relative yearly anomaly-hunting score.,no
+reports/04_SUMMARIES,fireball_yearly_summary.csv,Fireball counts and energy by year.,no
+reports/04_SUMMARIES,fireball_monthly_summary.csv,Fireball counts and energy by year/month.,no
+reports/04_SUMMARIES,largest_fireballs.csv,Largest fireball events in the fetched sample.,no
+reports/04_SUMMARIES,close_approach_yearly_summary.csv,Close-approach counts and extremes by year.,no
+reports/04_SUMMARIES,closest_approaches.csv,Closest approaches in the fetched sample.,no
+reports/04_SUMMARIES,fastest_close_approaches.csv,Fastest close approaches in the fetched sample.,no
+reports/04_SUMMARIES,sentry_summary.csv,Summary of fetched Sentry risk table.,no
+reports/99_TECHNICAL_LOGS,run_manifest.csv,"Run settings, thresholds, API URLs, and warnings.",no

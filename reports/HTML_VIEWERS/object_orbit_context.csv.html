@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Object Orbit Context - IuPetra Viewer</title>
+  <style>
+    :root {
+      --void: #050403;
+      --panel: #17100b;
+      --panel2: #2a1710;
+      --gold: #f4bd52;
+      --amber: #d98736;
+      --cream: #ffe8b9;
+      --ivory: #fff6df;
+      --muted: rgba(255, 232, 185, 0.72);
+      --line: rgba(244, 189, 82, 0.28);
+      --redspot: #b6402d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ivory);
+      font-family: "Trebuchet MS", Arial, sans-serif;
+      background:
+        linear-gradient(180deg, rgba(255,232,185,0.05) 0 8%, rgba(106,63,37,0.20) 8% 19%, rgba(42,23,16,0.40) 19% 38%, rgba(215,111,46,0.12) 38% 48%, rgba(5,4,3,1) 48% 100%),
+        #050403;
+    }
+    header {
+      padding: 28px clamp(18px, 4vw, 54px);
+      border-bottom: 1px solid var(--line);
+      background: rgba(5,4,3,0.72);
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      backdrop-filter: blur(10px);
+    }
+    .topline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--cream);
+      font-size: clamp(1.8rem, 4vw, 3.2rem);
+    }
+    .meta {
+      color: var(--muted);
+      margin-top: 8px;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    a.button {
+      color: #231005;
+      background: linear-gradient(135deg, var(--gold), var(--amber));
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-weight: 800;
+    }
+    a.button.secondary {
+      color: var(--ivory);
+      background: rgba(5,4,3,0.36);
+      border: 1px solid var(--line);
+    }
+    main {
+      padding: 24px clamp(18px, 4vw, 54px) 60px;
+    }
+    .viewer-panel {
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(23,16,11,0.86);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.35);
+      overflow: hidden;
+    }
+    .table-wrap {
+      overflow: auto;
+      max-height: 74vh;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      min-width: 900px;
+    }
+    th, td {
+      border-bottom: 1px solid rgba(255,232,185,0.10);
+      padding: 9px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      position: sticky;
+      top: 0;
+      background: #2a1710;
+      color: var(--gold);
+      z-index: 2;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-size: 0.72rem;
+    }
+    td {
+      color: var(--ivory);
+    }
+    tr:hover td {
+      background: rgba(215,111,46,0.10);
+    }
+    pre {
+      margin: 0;
+      white-space: pre-wrap;
+      padding: 22px;
+      color: var(--ivory);
+      font-family: Consolas, "Courier New", monospace;
+      line-height: 1.5;
+    }
+    .empty, .truncated {
+      color: var(--muted);
+      padding: 22px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topline">
+      <div>
+        <h1>Object Orbit Context</h1>
+        <div class="meta">CSV Data Sheet · SBDB object enrichment · Source: object_orbit_context.csv</div>
+      </div>
+      <div class="actions">
+        <a class="button" href="../00_START_HERE/IuPetra_START_HERE.html">Dashboard</a>
+        <a class="button secondary" href="../03_ORBIT_CONTEXT/object_orbit_context.csv">Open raw file</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="viewer-panel">
+      <div class='table-wrap'><table><thead><tr><th>lookup_rank</th><th>object_designation</th><th>lookup_status</th><th>object_fullname</th><th>spkid</th><th>small_body_kind</th><th>orbit_class_code</th><th>orbit_class_name</th><th>is_neo</th><th>is_pha</th><th>absolute_magnitude_h</th><th>estimated_diameter_km</th><th>moid_au</th><th>perihelion_distance_au</th><th>aphelion_distance_au</th><th>semi_major_axis_au</th><th>eccentricity</th><th>inclination_deg</th><th>orbital_period_days</th><th>last_observation_date</th><th>source_api</th><th>lookup_error</th></tr></thead><tbody><tr><td>1</td><td>54509</td><td>ok</td><td>54509 YORP (2000 PH5)</td><td>20054509</td><td>an</td><td>APO</td><td>Apollo</td><td>True</td><td>False</td><td></td><td></td><td></td><td>0.775</td><td>1.24</td><td>1.01</td><td>0.23</td><td>1.6</td><td>368</td><td>2005-08-03</td><td>NASA/JPL SBDB API</td><td></td></tr><tr><td>2</td><td>2003 YN107</td><td>ok</td><td>(2003 YN107)</td><td>50170244</td><td>au</td><td>ATE</td><td>Aten</td><td>True</td><td>False</td><td></td><td></td><td></td><td>0.975</td><td>1</td><td>0.989</td><td>0.0139</td><td>4.32</td><td>359</td><td>2005-03-31</td><td>NASA/JPL SBDB API</td><td></td></tr><tr><td>3</td><td>2022 YG</td><td>ok</td><td>(2022 YG)</td><td>54335005</td><td>au</td><td>APO</td><td>Apollo</td><td>True</td><td>False</td><td></td><td></td><td></td><td>0.807</td><td>1.2</td><td>1</td><td>0.196</td><td>2.37</td><td>368</td><td>2024-12-01</td><td>NASA/JPL SBDB API</td><td></td></tr><tr><td>4</td><td>2001 GO2</td><td>ok</td><td>(2001 GO2)</td><td>50092319</td><td>au</td><td>APO</td><td>Apollo</td><td>True</td><td>False</td><td></td><td></td><td></td><td>0.837</td><td>1.18</td><td>1.01</td><td>0.168</td><td>4.62</td><td>369</td><td>2001-04-17</td><td>NASA/JPL SBDB API</td><td></td></tr><tr><td>5</td><td>2004 PU42</td><td>ok</td><td>(2004 PU42)</td><td>50249371</td><td>au</td><td>APO</td><td>Apollo</td><td>True</td><td>False</td><td></td><td></td><td></td><td>0.876</td><td>2.27</td><td>1.57</td><td>0.444</td><td>0.992</td><td>722</td><td>2004-08-14</td><td>NASA/JPL SBDB API</td><td></td></tr><tr><td>6</td><td>367943</td><td>ok</td><td>367943 Duende (2012 DA14)</td><td>20367943</td><td>an</td><td>ATE</td><td>Aten</td><td>True</td><td>False</td><td></td><td></td><td></td><td>0.829</td><td>0.992</td><td>0.911</td><td>0.0893</td><td>11.6</td><td>317</td><td>2013-02-21</td><td>NASA/JPL SBDB API</td><td></td></tr><tr><td>7</td><td>2021 CZ3</td><td>ok</td><td>(2021 CZ3)</td><td>54111260</td><td>au</td><td>APO</td><td>Apollo</td><td>True</td><td>False</td><td></td><td></td><td></td><td>0.757</td><td>1.45</td><td>1.1</td><td>0.314</td><td>4.54</td><td>424</td><td>2021-02-10</td><td>NASA/JPL SBDB API</td><td></td></tr><tr><td>8</td><td>2001 XX4</td><td>ok</td><td>(2001 XX4)</td><td>50102706</td><td>au</td><td>APO</td><td>Apollo</td><td>True</td><td>True</td><td></td><td></td><td></td><td>0.446</td><td>1.57</td><td>1.01</td><td>0.557</td><td>0.85</td><td>369</td><td>2003-01-03</td><td>NASA/JPL SBDB API</td><td></td></tr><tr><td>9</td><td>2022 JF</td><td>ok</td><td>(2022 JF)</td><td>54278099</td><td>au</td><td>APO</td><td>Apollo</td><td>True</td><td>False</td><td></td><td></td><td></td><td>0.908</td><td>1.16</td><td>1.04</td><td>0.124</td><td>32.7</td><td>385</td><td>2022-05-08</td><td>NASA/JPL SBDB API</td><td></td></tr><tr><td>10</td><td>2015 RT1</td><td>ok</td><td>(2015 RT1)</td><td>50726735</td><td>au</td><td>ATE</td><td>Aten</td><td>True</td><td>False</td><td></td><td></td><td></td><td>0.711</td><td>1.2</td><td>0.955</td><td>0.255</td><td>1.79</td><td>341</td><td>2017-12-31</td><td>NASA/JPL SBDB API</td><td></td></tr><tr><td>11</td><td>2004 CZ1</td><td>ok</td><td>(2004 CZ1)</td><td>50175347</td><td>au</td><td>APO</td><td>Apollo</td><td>True</td><td>False</td><td></td><td></td><td></td><td>0.84</td><td>2.24</td><td>1.54</td><td>0.455</td><td>2</td><td>699</td><td>2004-02-24</td><td>NASA/JPL SBDB API</td><td></td></tr><tr><td>12</td><td>25143</td><td>ok</td><td>25143 Itokawa (1998 SF36)</td><td>20025143</td><td>an</td><td>APO</td><td>Apollo</td><td>True</td><td>True</td><td></td><td></td><td></td><td>0.953</td><td>1.7</td><td>1.32</td><td>0.28</td><td>1.62</td><td>556</td><td>2024-12-19</td><td>NASA/JPL SBDB API</td><td></td></tr><tr><td>13</td><td>2017 XY2</td><td>ok</td><td>(2017 XY2)</td><td>50791326</td><td>au</td><td>APO</td><td>Apollo</td><td>True</td><td>False</td><td></td><td></td><td></td><td>0.865</td><td>1.22</td><td>1.04</td><td>0.171</td><td>12.1</td><td>389</td><td>2017-12-15</td><td>NASA/JPL SBDB API</td><td></td></tr><tr><td>14</td><td>2001 FR85</td><td>ok</td><td>(2001 FR85)</td><td>50072296</td><td>au</td><td>ATE</td><td>Aten</td><td>True</td><td>False</td><td></td><td></td><td></td><td>0.955</td><td>1.01</td><td>0.983</td><td>0.0279</td><td>5.25</td><td>356</td><td>2001-04-02</td><td>NASA/JPL SBDB API</td><td></td></tr><tr><td>15</td><td>2020 KQ7</td><td>ok</td><td>(2020 KQ7)</td><td>54017324</td><td>au</td><td>ATE</td><td>Aten</td><td>True</td><td>False</td><td></td><td></td><td></td><td>0.862</td><td>1.08</td><td>0.971</td><td>0.112</td><td>2.15</td><td>350</td><td>2020-06-26</td><td>NASA/JPL SBDB API</td><td></td></tr><tr><td>16</td><td>2025 PN7</td><td>ok</td><td>(2025 PN7)</td><td>54542757</td><td>au</td><td>APO</td><td>Apollo</td><td>True</td><td>False</td><td></td><td></td><td></td><td>0.893</td><td>1.11</td><td>1</td><td>0.108</td><td>1.98</td><td>366</td><td>2025-08-29</td><td>NASA/JPL SBDB API</td><td></td></tr><tr><td>17</td><td>2002 PN</td><td>ok</td><td>(2002 PN)</td><td>50132150</td><td>au</td><td>APO</td><td>Apollo</td><td>True</td><td>False</td><td></td><td></td><td></td><td>0.945</td><td>1.08</td><td>1.01</td><td>0.0687</td><td>9.14</td><td>373</td><td>2003-04-08</td><td>NASA/JPL SBDB API</td><td></td></tr><tr><td>18</td><td>2025 SY1</td><td>ok</td><td>(2025 SY1)</td><td>54546404</td><td>au</td><td>ATE</td><td>Aten</td><td>True</td><td>False</td><td></td><td></td><td></td><td>0.711</td><td>1.18</td><td>0.944</td><td>0.246</td><td>3.95</td><td>335</td><td>2025-09-19</td><td>NASA/JPL SBDB API</td><td></td></tr><tr><td>19</td><td>2020 DK</td><td>ok</td><td>(2020 DK)</td><td>50991636</td><td>au</td><td>ATE</td><td>Aten</td><td>True</td><td>False</td><td></td><td></td><td></td><td>0.345</td><td>1.03</td><td>0.689</td><td>0.499</td><td>2.81</td><td>209</td><td>2020-02-21</td><td>NASA/JPL SBDB API</td><td></td></tr><tr><td>20</td><td>2015 VU64</td><td>ok</td><td>(2015 VU64)</td><td>50733885</td><td>au</td><td>ATE</td><td>Aten</td><td>True</td><td>False</td><td></td><td></td><td></td><td>0.834</td><td>1.04</td><td>0.935</td><td>0.108</td><td>2.48</td><td>330</td><td>2015-11-10</td><td>NASA/JPL SBDB API</td><td></td></tr><tr><td>21</td><td>2016 TY55</td><td>ok</td><td>(2016 TY55)</td><td>50760914</td><td>au</td><td>APO</td><td>Apollo</td><td>True</td><td>False</td><td></td><td></td><td></td><td>0.873</td><td>1.19</td><td>1.03</td><td>0.153</td><td>4.21</td><td>382</td><td>2016-10-19</td><td>NASA/JPL SBDB API</td><td></td></tr><tr><td>22</td><td>2001 BF10</td><td>ok</td><td>(2001 BF10)</td><td>50076836</td><td>au</td><td>APO</td><td>Apollo</td><td>True</td><td>False</td><td></td><td></td><td></td><td>0.901</td><td>2.32</td><td>1.61</td><td>0.441</td><td>1.49</td><td>747</td><td>2002-12-31</td><td>NASA/JPL SBDB API</td><td></td></tr><tr><td>23</td><td>2017 FB3</td><td>ok</td><td>(2017 FB3)</td><td>50771664</td><td>au</td><td>APO</td><td>Apollo</td><td>True</td><td>False</td><td></td><td></td><td></td><td>0.852</td><td>1.24</td><td>1.05</td><td>0.186</td><td>1.01</td><td>391</td><td>2017-04-22</td><td>NASA/JPL SBDB API</td><td></td></tr><tr><td>24</td><td>2025 BL</td><td>ok</td><td>(2025 BL)</td><td>54516185</td><td>au</td><td>ATE</td><td>Aten</td><td>True</td><td>False</td><td></td><td></td><td></td><td>0.886</td><td>1.11</td><td>0.997</td><td>0.111</td><td>11.8</td><td>364</td><td>2026-01-21</td><td>NASA/JPL SBDB API</td><td></td></tr><tr><td>25</td><td>2004 SC56</td><td>ok</td><td>(2004 SC56)</td><td>50255488</td><td>au</td><td>ATE</td><td>Aten</td><td>True</td><td>False</td><td></td><td></td><td></td><td>0.439</td><td>1.1</td><td>0.768</td><td>0.428</td><td>4.78</td><td>246</td><td>2010-09-01</td><td>NASA/JPL SBDB API</td><td></td></tr></tbody></table></div>
+    </section>
+  </main>
+</body>
+</html>

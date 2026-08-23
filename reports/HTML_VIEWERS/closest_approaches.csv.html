@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Closest Approaches - IuPetra Viewer</title>
+  <style>
+    :root {
+      --void: #050403;
+      --panel: #17100b;
+      --panel2: #2a1710;
+      --gold: #f4bd52;
+      --amber: #d98736;
+      --cream: #ffe8b9;
+      --ivory: #fff6df;
+      --muted: rgba(255, 232, 185, 0.72);
+      --line: rgba(244, 189, 82, 0.28);
+      --redspot: #b6402d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ivory);
+      font-family: "Trebuchet MS", Arial, sans-serif;
+      background:
+        linear-gradient(180deg, rgba(255,232,185,0.05) 0 8%, rgba(106,63,37,0.20) 8% 19%, rgba(42,23,16,0.40) 19% 38%, rgba(215,111,46,0.12) 38% 48%, rgba(5,4,3,1) 48% 100%),
+        #050403;
+    }
+    header {
+      padding: 28px clamp(18px, 4vw, 54px);
+      border-bottom: 1px solid var(--line);
+      background: rgba(5,4,3,0.72);
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      backdrop-filter: blur(10px);
+    }
+    .topline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--cream);
+      font-size: clamp(1.8rem, 4vw, 3.2rem);
+    }
+    .meta {
+      color: var(--muted);
+      margin-top: 8px;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    a.button {
+      color: #231005;
+      background: linear-gradient(135deg, var(--gold), var(--amber));
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-weight: 800;
+    }
+    a.button.secondary {
+      color: var(--ivory);
+      background: rgba(5,4,3,0.36);
+      border: 1px solid var(--line);
+    }
+    main {
+      padding: 24px clamp(18px, 4vw, 54px) 60px;
+    }
+    .viewer-panel {
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(23,16,11,0.86);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.35);
+      overflow: hidden;
+    }
+    .table-wrap {
+      overflow: auto;
+      max-height: 74vh;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      min-width: 900px;
+    }
+    th, td {
+      border-bottom: 1px solid rgba(255,232,185,0.10);
+      padding: 9px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      position: sticky;
+      top: 0;
+      background: #2a1710;
+      color: var(--gold);
+      z-index: 2;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-size: 0.72rem;
+    }
+    td {
+      color: var(--ivory);
+    }
+    tr:hover td {
+      background: rgba(215,111,46,0.10);
+    }
+    pre {
+      margin: 0;
+      white-space: pre-wrap;
+      padding: 22px;
+      color: var(--ivory);
+      font-family: Consolas, "Courier New", monospace;
+      line-height: 1.5;
+    }
+    .empty, .truncated {
+      color: var(--muted);
+      padding: 22px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topline">
+      <div>
+        <h1>Closest Approaches</h1>
+        <div class="meta">CSV Data Sheet · Closest approaches in fetched sample · Source: closest_approaches.csv</div>
+      </div>
+      <div class="actions">
+        <a class="button" href="../00_START_HERE/IuPetra_START_HERE.html">Dashboard</a>
+        <a class="button secondary" href="../04_SUMMARIES/closest_approaches.csv">Open raw file</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="viewer-panel">
+      <div class='table-wrap'><table><thead><tr><th>rank</th><th>object_designation</th><th>object_fullname</th><th>close_approach_datetime_tdb</th><th>year</th><th>distance_au</th><th>distance_min_au</th><th>distance_max_au</th><th>velocity_relative_km_s</th><th>absolute_magnitude_h</th><th>diameter_km</th></tr></thead><tbody><tr><td>1</td><td>2004 FU162</td><td>       (2004 FU162)</td><td>2004-Mar-31 15:35</td><td>2004</td><td>8.63189689546789e-05</td><td>2.32222050518807e-05</td><td>0.000196402067904961</td><td>13.3906449624196</td><td>29.48</td><td></td></tr><tr><td>2</td><td>2004 YD5</td><td>       (2004 YD5)</td><td>2004-Dec-19 20:38</td><td>2004</td><td>0.000226525127435088</td><td>0.00022600375691978</td><td>0.000227046449362596</td><td>25.3540893932745</td><td>29.3</td><td></td></tr><tr><td>3</td><td>2004 FH</td><td>       (2004 FH)</td><td>2004-Mar-18 22:09</td><td>2004</td><td>0.000328210504429864</td><td>0.000328207625413317</td><td>0.000328213383448856</td><td>8.00293365023199</td><td>26.41</td><td></td></tr><tr><td>4</td><td>2003 SQ222</td><td>       (2003 SQ222)</td><td>2003-Sep-27 22:56</td><td>2003</td><td>0.000563056369189049</td><td>0.000561596174218194</td><td>0.000564516295097979</td><td>15.4264792746878</td><td>30.1</td><td></td></tr><tr><td>5</td><td>2002 XV90</td><td>       (2002 XV90)</td><td>2002-Dec-11 08:24</td><td>2002</td><td>0.000786724918930163</td><td>0.000779913783357115</td><td>0.000793538324050151</td><td>8.00840374457133</td><td>25.28</td><td></td></tr><tr><td>6</td><td>2002 MN</td><td>       (2002 MN)</td><td>2002-Jun-14 02:03</td><td>2002</td><td>0.000802053264299034</td><td>0.000801792849546573</td><td>0.000802313682613599</td><td>10.5744802875799</td><td>23.70</td><td></td></tr><tr><td>7</td><td>2017 VW13</td><td>       (2017 VW13)</td><td>2001-Nov-08 10:53</td><td>2001</td><td>0.000803236221299779</td><td>0.00078931142722583</td><td>0.00804921028603937</td><td>11.3717646222861</td><td>20.63</td><td></td></tr><tr><td>8</td><td>2023 DZ2</td><td>       (2023 DZ2)</td><td>2004-Apr-18 23:27</td><td>2004</td><td>0.000891153407187291</td><td>0.000877242444321018</td><td>0.000905129344754756</td><td>7.97742162486332</td><td>24.27</td><td></td></tr><tr><td>9</td><td>2003 XJ7</td><td>       (2003 XJ7)</td><td>2003-Dec-06 19:04</td><td>2003</td><td>0.000990617054842303</td><td>0.000989495720613654</td><td>0.000991738342991924</td><td>16.9288118517048</td><td>26.4</td><td></td></tr><tr><td>10</td><td>2003 SW130</td><td>       (2003 SW130)</td><td>2003-Sep-19 05:39</td><td>2003</td><td>0.00108209762910128</td><td>0.00108018330659836</td><td>0.00108401159354605</td><td>9.09125962339681</td><td>29.1</td><td></td></tr><tr><td>11</td><td>2004 OD4</td><td>       (2004 OD4)</td><td>2004-Jul-16 05:10</td><td>2004</td><td>0.00110744757227765</td><td>0.00110226849709081</td><td>0.00111262415055405</td><td>8.88750066941271</td><td>27.0</td><td></td></tr><tr><td>12</td><td>2004 FY15</td><td>       (2004 FY15)</td><td>2004-Mar-27 20:22</td><td>2004</td><td>0.00159555543418531</td><td>0.00159360312702867</td><td>0.00159750755433454</td><td>8.57473253134281</td><td>26.1</td><td></td></tr><tr><td>13</td><td>2016 TT</td><td>       (2016 TT)</td><td>2004-Sep-26 04:38</td><td>2004</td><td>0.00171837815517677</td><td>0.00164790725573789</td><td>0.0673387903328106</td><td>11.7622170042696</td><td>26.0</td><td></td></tr><tr><td>14</td><td>2005 BS1</td><td>       (2005 BS1)</td><td>2005-Jan-13 10:13</td><td>2005</td><td>0.00175532769103293</td><td>0.00174694435370343</td><td>0.00176370935699093</td><td>12.5062310626873</td><td>27.5</td><td></td></tr><tr><td>15</td><td>2025 FA2</td><td>       (2025 FA2)</td><td>2000-Mar-19 14:05</td><td>2000</td><td>0.00179569564130305</td><td>0.0015423968370066</td><td>0.0963951964131942</td><td>10.2657251380667</td><td>26.95</td><td></td></tr><tr><td>16</td><td>2025 ME90</td><td>       (2025 ME90)</td><td>2004-Jun-30 10:24</td><td>2004</td><td>0.00183709664858941</td><td>0.00183642015217507</td><td>0.00183777448474985</td><td>29.4627130958772</td><td>21.01</td><td></td></tr><tr><td>17</td><td>2004 HE</td><td>       (2004 HE)</td><td>2004-Apr-18 00:21</td><td>2004</td><td>0.00184974909825208</td><td>0.00184800537144953</td><td>0.001851492798257</td><td>18.2508279793705</td><td>26.8</td><td></td></tr><tr><td>18</td><td>2003 UM3</td><td>       (2003 UM3)</td><td>2003-Oct-12 01:57</td><td>2003</td><td>0.00185364539944093</td><td>0.00150753136645287</td><td>0.00220134042529704</td><td>12.8947704834191</td><td>28.1</td><td></td></tr><tr><td>19</td><td>2004 UH1</td><td>       (2004 UH1)</td><td>2004-Oct-24 17:32</td><td>2004</td><td>0.00198182956178897</td><td>0.00197900614976541</td><td>0.00198465284031238</td><td>11.7466550624737</td><td>28.1</td><td></td></tr><tr><td>20</td><td>2001 BA16</td><td>       (2001 BA16)</td><td>2001-Jan-15 20:30</td><td>2001</td><td>0.00204665986836553</td><td>0.00204137441846288</td><td>0.00205194686689051</td><td>5.1038575417179</td><td>26.0</td><td></td></tr><tr><td>21</td><td>2004 XB45</td><td>       (2004 XB45)</td><td>2004-Dec-16 19:10</td><td>2004</td><td>0.00217441881582773</td><td>0.00217028020289304</td><td>0.00217855729819744</td><td>17.1255711421577</td><td>26.2</td><td></td></tr><tr><td>22</td><td>2003 HW10</td><td>       (2003 HW10)</td><td>2003-Apr-29 06:24</td><td>2003</td><td>0.00220629986171607</td><td>0.00220414558030993</td><td>0.00220845408930842</td><td>13.3106958635747</td><td>27.0</td><td></td></tr><tr><td>23</td><td>2004 ST26</td><td>       (2004 ST26)</td><td>2004-Sep-21 23:32</td><td>2004</td><td>0.00245709319688152</td><td>0.00245128362206315</td><td>0.00246290264328448</td><td>21.3803584056318</td><td>26.3</td><td></td></tr><tr><td>24</td><td>2004 RU109</td><td>       (2004 RU109)</td><td>2004-Sep-13 15:43</td><td>2004</td><td>0.0024657048538189</td><td>0.00245988652781394</td><td>0.00247152284351785</td><td>12.934160766566</td><td>26.4</td><td></td></tr><tr><td>25</td><td>2002 GQ</td><td>       (2002 GQ)</td><td>2002-Mar-31 03:31</td><td>2002</td><td>0.00279680976297641</td><td>0.00278182403668027</td><td>0.0028117921822725</td><td>9.29962229411583</td><td>26.3</td><td></td></tr><tr><td>26</td><td>2017 EA</td><td>       (2017 EA)</td><td>2004-Mar-01 03:08</td><td>2004</td><td>0.00282498032130639</td><td>0.00169254936907536</td><td>0.0638337420026041</td><td>17.5955004492118</td><td>30.8</td><td></td></tr><tr><td>27</td><td>2003 XV</td><td>       (2003 XV)</td><td>2003-Dec-06 22:45</td><td>2003</td><td>0.00305726546766975</td><td>0.00305721596110972</td><td>0.00305731497427705</td><td>12.0027418432331</td><td>26.7</td><td></td></tr><tr><td>28</td><td>2002 EM7</td><td>       (2002 EM7)</td><td>2002-Mar-08 00:59</td><td>2002</td><td>0.00311008465444615</td><td>0.00310371827156376</td><td>0.00311645057748887</td><td>10.2857862614941</td><td>24.4</td><td></td></tr><tr><td>29</td><td>2002 CB26</td><td>       (2002 CB26)</td><td>2002-Feb-08 19:11</td><td>2002</td><td>0.00318636053259569</td><td>0.00312391531090968</td><td>0.00324879781389655</td><td>22.3641040997354</td><td>26.9</td><td></td></tr><tr><td>30</td><td>2024 RH7</td><td>       (2024 RH7)</td><td>2001-Sep-09 01:13</td><td>2001</td><td>0.0032390806808343</td><td>0.000531591186897728</td><td>0.13941796749769</td><td>13.7634984517655</td><td>29.84</td><td></td></tr><tr><td>31</td><td>2004 DA53</td><td>       (2004 DA53)</td><td>2004-Feb-24 07:11</td><td>2004</td><td>0.00327225037026833</td><td>0.00323658011845996</td><td>0.00330790623154753</td><td>9.38601776740407</td><td>28.0</td><td></td></tr><tr><td>32</td><td>2003 LW2</td><td>       (2003 LW2)</td><td>2003-Jun-01 05:16</td><td>2003</td><td>0.00330981083187281</td><td>0.0033097304861501</td><td>0.00330989117882898</td><td>8.12372454235807</td><td>25.8</td><td></td></tr><tr><td>33</td><td>2000 LG6</td><td>       (2000 LG6)</td><td>2000-Jun-02 21:38</td><td>2000</td><td>0.00331692661867423</td><td>0.00331028466046446</td><td>0.00332356576052294</td><td>2.44756830736134</td><td>29.0</td><td></td></tr><tr><td>34</td><td>2002 NY40</td><td>       (2002 NY40)</td><td>2002-Aug-18 07:48</td><td>2002</td><td>0.00352258917648114</td><td>0.00352256914576505</td><td>0.00352260920719743</td><td>20.8962978875956</td><td>19.0</td><td></td></tr><tr><td>35</td><td>2003 DW10</td><td>       (2003 DW10)</td><td>2003-Mar-03 06:13</td><td>2003</td><td>0.00362267531111631</td><td>0.00362201764640547</td><td>0.00362333296962591</td><td>7.79863341485572</td><td>26.1</td><td></td></tr><tr><td>36</td><td>2003 DY15</td><td>       (2003 DY15)</td><td>2003-Mar-05 20:26</td><td>2003</td><td>0.00366470394444541</td><td>0.00366125775903228</td><td>0.00366815003712025</td><td>9.99644585297754</td><td>26.3</td><td></td></tr><tr><td>37</td><td>2004 MR1</td><td>       (2004 MR1)</td><td>2004-Jun-21 20:35</td><td>2004</td><td>0.00378267678382408</td><td>0.0037705679910871</td><td>0.00379478425104423</td><td>7.58610215594514</td><td>25.6</td><td></td></tr><tr><td>38</td><td>2004 PZ19</td><td>       (2004 PZ19)</td><td>2004-Aug-11 20:07</td><td>2004</td><td>0.00410887836770788</td><td>0.00409650711705668</td><td>0.00412124889239859</td><td>11.3748266638107</td><td>24.5</td><td></td></tr><tr><td>39</td><td>2021 FP2</td><td>       (2021 FP2)</td><td>2002-Mar-24 11:20</td><td>2002</td><td>0.00415496512553317</td><td>0.000823287884129889</td><td>0.113569331158736</td><td>8.72483287087076</td><td>30.12</td><td></td></tr><tr><td>40</td><td>2026 JA</td><td>       (2026 JA)</td><td>2002-May-03 08:38</td><td>2002</td><td>0.00420076799536028</td><td>0.00342189293105701</td><td>0.00500211177451479</td><td>11.8326860881723</td><td>26.68</td><td></td></tr><tr><td>41</td><td>2003 YS70</td><td>       (2003 YS70)</td><td>2003-Dec-27 00:28</td><td>2003</td><td>0.00422747069863127</td><td>0.0042262912590682</td><td>0.00422865006525153</td><td>3.45427226131573</td><td>29.1</td><td></td></tr><tr><td>42</td><td>2003 WT153</td><td>       (2003 WT153)</td><td>2003-Nov-30 19:05</td><td>2003</td><td>0.00453564026031883</td><td>0.00453086071716924</td><td>0.00454041915874965</td><td>4.40397921472536</td><td>28.0</td><td></td></tr><tr><td>43</td><td>2004 BK86</td><td>       (2004 BK86)</td><td>2004-Feb-01 23:04</td><td>2004</td><td>0.00458544323952223</td><td>0.00427482670253068</td><td>0.00489577137679282</td><td>15.698562047095</td><td>25.4</td><td></td></tr><tr><td>44</td><td>2004 FM32</td><td>       (2004 FM32)</td><td>2004-Mar-25 19:00</td><td>2004</td><td>0.00460910969292342</td><td>0.00458598396102175</td><td>0.00463222273695982</td><td>4.33240181655631</td><td>27.1</td><td></td></tr><tr><td>45</td><td>2016 TQ54</td><td>       (2016 TQ54)</td><td>2004-Oct-02 03:47</td><td>2004</td><td>0.00461278812885406</td><td>0.000338126795371845</td><td>0.0175176288888083</td><td>8.85764648070501</td><td>27.2</td><td></td></tr><tr><td>46</td><td>2004 KF17</td><td>       (2004 KF17)</td><td>2004-May-31 21:10</td><td>2004</td><td>0.00465637253791326</td><td>0.00463157178899237</td><td>0.00468117098515415</td><td>11.399513735521</td><td>26.1</td><td></td></tr><tr><td>47</td><td>2015 UH52</td><td>       (2015 UH52)</td><td>2000-Oct-19 21:11</td><td>2000</td><td>0.00472344399169328</td><td>0.00464777415002651</td><td>0.00479911436173901</td><td>11.4133293346521</td><td>26.02</td><td></td></tr><tr><td>48</td><td>2001 WM15</td><td>       (2001 WM15)</td><td>2001-Nov-29 07:55</td><td>2001</td><td>0.00485830498737882</td><td>0.00483077861903433</td><td>0.00488582990584915</td><td>15.2237345256486</td><td>25.0</td><td></td></tr><tr><td>49</td><td>2000 YA</td><td>       (2000 YA)</td><td>2000-Dec-22 06:54</td><td>2000</td><td>0.0049485161160092</td><td>0.00494849021912904</td><td>0.00494854201291017</td><td>14.1889296723642</td><td>23.88</td><td></td></tr><tr><td>50</td><td>2002 TY59</td><td>       (2002 TY59)</td><td>2002-Oct-02 01:53</td><td>2002</td><td>0.00510546967938508</td><td>0.00509714422953692</td><td>0.00511379474479039</td><td>8.41512765549884</td><td>25.5</td><td></td></tr></tbody></table></div>
+    </section>
+  </main>
+</body>
+</html>

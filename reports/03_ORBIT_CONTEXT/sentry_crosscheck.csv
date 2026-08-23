@@ -1,0 +1,448 @@
+candidate_id,candidate_name,candidate_type,object_designation,sentry_match_status,sentry_object_fullname,year_range,potential_impact_count,cumulative_impact_probability,palermo_scale_cumulative,palermo_scale_maximum,torino_scale_maximum,estimated_diameter_km,crosscheck_note
+HEF_0011,HEF_0011,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0097,HEF_0097,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0055,HEF_0055,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0125,HEF_0125,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0013,HEF_0013,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0081,HEF_0081,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0140,HEF_0140,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0093,HEF_0093,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0036,HEF_0036,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0148,HEF_0148,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0122,HEF_0122,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0126,HEF_0126,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+CAW_0072,CAW_0072,close_approach_window,2025 UC11,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0072,CAW_0072,close_approach_window,2004 FX1,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0072,CAW_0072,close_approach_window,2004 FM4,matched_sentry,(2004 FM4),2110-2119,3,2.29213e-08,-7.60,-7.84,0,0.042,Object appears in the current fetched CNEOS Sentry table.
+CAW_0072,CAW_0072,close_approach_window,2004 EU22,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0072,CAW_0072,close_approach_window,2004 EL20,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0072,CAW_0072,close_approach_window,2004 FY3,matched_sentry,(2004 FY3),2116-2122,5,7.8026e-07,-6.45,-6.69,0,0.032,Object appears in the current fetched CNEOS Sentry table.
+CAW_0072,CAW_0072,close_approach_window,2021 SB2,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0072,CAW_0072,close_approach_window,2004 FH,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0072,CAW_0072,close_approach_window,2004 FY1,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0073,CAW_0073,close_approach_window,2026 FN5,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0073,CAW_0073,close_approach_window,2004 FK5,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0073,CAW_0073,close_approach_window,2004 FN8,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0073,CAW_0073,close_approach_window,2004 FM32,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0073,CAW_0073,close_approach_window,2004 FA,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0073,CAW_0073,close_approach_window,2004 FY15,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0073,CAW_0073,close_approach_window,2004 FU162,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0073,CAW_0073,close_approach_window,2004 FG29,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0031,CAW_0031,close_approach_window,2001 VM5,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0031,CAW_0031,close_approach_window,2017 VW13,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0031,CAW_0031,close_approach_window,2012 VC26,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0031,CAW_0031,close_approach_window,2001 VG16,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0031,CAW_0031,close_approach_window,2001 VE2,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0031,CAW_0031,close_approach_window,2001 WJ15,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0031,CAW_0031,close_approach_window,2001 XP31,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0031,CAW_0031,close_approach_window,2001 WJ4,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0089,CAW_0089,close_approach_window,2004 XG29,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0089,CAW_0089,close_approach_window,2004 YC,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0089,CAW_0089,close_approach_window,2025 YC,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0089,CAW_0089,close_approach_window,2004 XO63,matched_sentry,(2004 XO63),2065-2065,1,7.137e-08,-7.68,-7.68,0,0.021,Object appears in the current fetched CNEOS Sentry table.
+CAW_0089,CAW_0089,close_approach_window,2004 XB45,matched_sentry,(2004 XB45),2035-2085,4,4.539e-07,-6.18,-6.21,0,0.019,Object appears in the current fetched CNEOS Sentry table.
+CAW_0089,CAW_0089,close_approach_window,2004 YD5,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0089,CAW_0089,close_approach_window,184266,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0074,CAW_0074,close_approach_window,2020 TW1,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0074,CAW_0074,close_approach_window,2008 GF1,matched_sentry,(2008 GF1),2080-2080,1,7.424e-08,-8.66,-8.66,0,0.0075,Object appears in the current fetched CNEOS Sentry table.
+CAW_0074,CAW_0074,close_approach_window,2004 HM,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0074,CAW_0074,close_approach_window,2004 HL,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0074,CAW_0074,close_approach_window,2004 HE,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0074,CAW_0074,close_approach_window,2023 DZ2,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0074,CAW_0074,close_approach_window,2004 GD,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0083,CAW_0083,close_approach_window,2004 RU109,matched_sentry,(2004 RU109),2034-2053,7,1.21185e-06,-6.15,-6.46,0,0.017,Object appears in the current fetched CNEOS Sentry table.
+CAW_0083,CAW_0083,close_approach_window,2004 RN251,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0083,CAW_0083,close_approach_window,2004 SE26,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0083,CAW_0083,close_approach_window,2004 SR26,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0083,CAW_0083,close_approach_window,2004 ST26,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0083,CAW_0083,close_approach_window,2021 TH1,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0083,CAW_0083,close_approach_window,2016 TT,matched_sentry,(2016 TT),2083-2096,5,3.69014e-07,-7.06,-7.41,0,0.021,Object appears in the current fetched CNEOS Sentry table.
+CAW_0055,CAW_0055,close_approach_window,2023 UY3,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0055,CAW_0055,close_approach_window,2003 JX2,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0055,CAW_0055,close_approach_window,2003 JY2,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0055,CAW_0055,close_approach_window,2003 HW10,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0055,CAW_0055,close_approach_window,2003 HT42,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0055,CAW_0055,close_approach_window,2008 WO2,matched_sentry,(2008 WO2),2065-2119,18,6.22281914e-05,-6.80,-7.15,0,0.0038,Object appears in the current fetched CNEOS Sentry table.
+CAW_0055,CAW_0055,close_approach_window,2003 JO14,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0067,CAW_0067,close_approach_window,2003 WT153,matched_sentry,(2003 WT153),2042-2121,133,3.10332749e-05,-6.19,-6.87,0,0.0083,Object appears in the current fetched CNEOS Sentry table.
+CAW_0067,CAW_0067,close_approach_window,2003 WP7,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0067,CAW_0067,close_approach_window,2003 XH10,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0067,CAW_0067,close_approach_window,2003 XJ7,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0067,CAW_0067,close_approach_window,2003 XV,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0067,CAW_0067,close_approach_window,2025 PF2,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0052,CAW_0052,close_approach_window,2003 DH6,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0052,CAW_0052,close_approach_window,2003 DW10,matched_sentry,(2003 DW10),2046-2058,2,1.039e-07,-7.31,-7.45,0,0.02,Object appears in the current fetched CNEOS Sentry table.
+CAW_0052,CAW_0052,close_approach_window,2003 DY15,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0052,CAW_0052,close_approach_window,2003 EM1,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0052,CAW_0052,close_approach_window,2022 EE5,matched_sentry,(2022 EE5),2113-2115,3,1.46557e-07,-9.77,-9.94,0,0.0032,Object appears in the current fetched CNEOS Sentry table.
+CAW_0052,CAW_0052,close_approach_window,2003 EP4,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0014,CAW_0014,close_approach_window,2023 FK1,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0014,CAW_0014,close_approach_window,2019 UX1,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0014,CAW_0014,close_approach_window,2015 UH52,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0014,CAW_0014,close_approach_window,2024 JF,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0014,CAW_0014,close_approach_window,2000 UR16,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0014,CAW_0014,close_approach_window,2022 WS8,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0086,CAW_0086,close_approach_window,2004 UT1,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0086,CAW_0086,close_approach_window,2019 UT8,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0086,CAW_0086,close_approach_window,2004 VZ14,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0086,CAW_0086,close_approach_window,2022 JF,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0086,CAW_0086,close_approach_window,2004 VZ,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0086,CAW_0086,close_approach_window,2004 UR,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0088,CAW_0088,close_approach_window,2004 XG,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0088,CAW_0088,close_approach_window,2004 XK,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0088,CAW_0088,close_approach_window,2004 XP35,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0088,CAW_0088,close_approach_window,2004 RZ164,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0088,CAW_0088,close_approach_window,2015 XT378,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0088,CAW_0088,close_approach_window,2021 WV1,matched_sentry,(2021 WV1),2048-2121,146,0.0002375926596,-5.40,-5.58,0,0.0068,Object appears in the current fetched CNEOS Sentry table.
+CAW_0029,CAW_0029,close_approach_window,2001 SP263,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0029,CAW_0029,close_approach_window,2001 SE270,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0029,CAW_0029,close_approach_window,2001 TY1,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0029,CAW_0029,close_approach_window,2001 TD,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0029,CAW_0029,close_approach_window,2017 FQ127,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0029,CAW_0029,close_approach_window,2001 TB,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0076,CAW_0076,close_approach_window,2011 KB,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0076,CAW_0076,close_approach_window,2004 KZ,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0076,CAW_0076,close_approach_window,2020 JY,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0076,CAW_0076,close_approach_window,2004 JO20,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0076,CAW_0076,close_approach_window,2004 JP1,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0076,CAW_0076,close_approach_window,2004 KG1,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0062,CAW_0062,close_approach_window,2024 RN3,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0062,CAW_0062,close_approach_window,2003 SY4,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0062,CAW_0062,close_approach_window,2003 SL36,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0062,CAW_0062,close_approach_window,2003 RU11,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0062,CAW_0062,close_approach_window,2003 SW130,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0071,CAW_0071,close_approach_window,2004 DF2,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0071,CAW_0071,close_approach_window,2004 DA53,matched_sentry,(2004 DA53),2111-2116,4,7.915858e-06,-6.82,-6.82,0,0.0088,Object appears in the current fetched CNEOS Sentry table.
+CAW_0071,CAW_0071,close_approach_window,2004 CZ1,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0071,CAW_0071,close_approach_window,2026 DM15,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0071,CAW_0071,close_approach_window,2017 EA,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0081,CAW_0081,close_approach_window,2004 QB,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0081,CAW_0081,close_approach_window,2023 TW2,matched_sentry,(2023 TW2),2063-2123,108,0.000131681849,-4.78,-5.18,0,0.019,Object appears in the current fetched CNEOS Sentry table.
+CAW_0081,CAW_0081,close_approach_window,2004 PZ19,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0081,CAW_0081,close_approach_window,2004 PU42,matched_sentry,(2004 PU42),2071-2122,45,7.61514717e-05,-5.12,-5.84,0,0.015,Object appears in the current fetched CNEOS Sentry table.
+CAW_0081,CAW_0081,close_approach_window,367943,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0038,CAW_0038,close_approach_window,2006 SN198,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0038,CAW_0038,close_approach_window,2002 FB,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0038,CAW_0038,close_approach_window,2002 EW11,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0038,CAW_0038,close_approach_window,2024 TL2,matched_sentry,(2024 TL2),2078-2121,11,1.4637114e-05,-7.74,-7.91,0,0.0024,Object appears in the current fetched CNEOS Sentry table.
+CAW_0038,CAW_0038,close_approach_window,2021 FP2,matched_sentry,(2021 FP2),2074-2122,46,6.94213815e-05,-6.94,-7.09,0,0.0032,Object appears in the current fetched CNEOS Sentry table.
+CAW_0068,CAW_0068,close_approach_window,2003 YN107,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0068,CAW_0068,close_approach_window,2020 XC,matched_sentry,(2020 XC),2085-2121,3,8.0138e-07,-8.33,-8.36,0,0.0054,Object appears in the current fetched CNEOS Sentry table.
+CAW_0068,CAW_0068,close_approach_window,2003 YS70,matched_sentry,(2003 YS70),2065-2122,34,2.637124e-05,-6.85,-7.14,0,0.0058,Object appears in the current fetched CNEOS Sentry table.
+CAW_0068,CAW_0068,close_approach_window,2003 YH111,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0068,CAW_0068,close_approach_window,2003 YG136,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0047,CAW_0047,close_approach_window,2002 TX55,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0047,CAW_0047,close_approach_window,2002 TY59,matched_sentry,(2002 TY59),2084-2118,7,1.557916e-05,-5.36,-5.53,0,0.028,Object appears in the current fetched CNEOS Sentry table.
+CAW_0047,CAW_0047,close_approach_window,2002 TZ66,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0047,CAW_0047,close_approach_window,2002 TA58,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0047,CAW_0047,close_approach_window,869522,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0082,CAW_0082,close_approach_window,2022 QX4,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0082,CAW_0082,close_approach_window,2004 QR4,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0082,CAW_0082,close_approach_window,2004 QA22,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0082,CAW_0082,close_approach_window,2004 RC11,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0082,CAW_0082,close_approach_window,2024 RH2,matched_sentry,(2024 RH2),2100-2117,3,3.6389e-07,-6.86,-7.05,0,0.034,Object appears in the current fetched CNEOS Sentry table.
+CAW_0053,CAW_0053,close_approach_window,2003 FY6,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0053,CAW_0053,close_approach_window,2003 FJ8,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0053,CAW_0053,close_approach_window,2023 NO,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0053,CAW_0053,close_approach_window,2003 GG21,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0053,CAW_0053,close_approach_window,2017 TD6,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0031,HEF_0031,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+CAW_0063,CAW_0063,close_approach_window,2003 SR84,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0063,CAW_0063,close_approach_window,2003 SQ222,matched_sentry,(2003 SQ222),2101-2101,1,1.112e-08,-10.44,-10.44,0,0.0034,Object appears in the current fetched CNEOS Sentry table.
+CAW_0063,CAW_0063,close_approach_window,2003 SM215,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0063,CAW_0063,close_approach_window,2010 FV9,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0066,CAW_0066,close_approach_window,2019 SN3,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0066,CAW_0066,close_approach_window,2020 VP4,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0066,CAW_0066,close_approach_window,2022 YL4,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0066,CAW_0066,close_approach_window,2003 WH98,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0066,CAW_0066,close_approach_window,2003 XK,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0080,CAW_0080,close_approach_window,437844,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0080,CAW_0080,close_approach_window,2004 OW10,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0080,CAW_0080,close_approach_window,2004 OD4,matched_sentry,(2004 OD4),2093-2093,1,1.836e-09,-9.90,-9.90,0,0.014,Object appears in the current fetched CNEOS Sentry table.
+CAW_0080,CAW_0080,close_approach_window,54509,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0079,CAW_0079,close_approach_window,25143,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0079,CAW_0079,close_approach_window,2004 MC,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0079,CAW_0079,close_approach_window,2025 ME90,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0079,CAW_0079,close_approach_window,2004 NU7,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0064,CAW_0064,close_approach_window,2003 UM3,matched_sentry,(2003 UM3),2030-2057,3,3.90677e-08,-8.60,-8.68,0,0.00832,Object appears in the current fetched CNEOS Sentry table.
+CAW_0064,CAW_0064,close_approach_window,2003 UY12,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0064,CAW_0064,close_approach_window,2022 CU4,matched_sentry,(2022 CU4),2081-2122,102,6.97468434e-05,-6.65,-7.45,0,0.0047,Object appears in the current fetched CNEOS Sentry table.
+CAW_0064,CAW_0064,close_approach_window,2003 UQ12,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0044,HEF_0044,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+CAW_0039,CAW_0039,close_approach_window,2002 GQ,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0039,CAW_0039,close_approach_window,503911,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0039,CAW_0039,close_approach_window,2024 GX3,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0039,CAW_0039,close_approach_window,2025 GK,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0177,HEF_0177,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0007,HEF_0007,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+CAW_0048,CAW_0048,close_approach_window,2019 UL,matched_sentry,(2019 UL),2082-2121,41,0.000112962664,-6.11,-6.33,0,0.0061,Object appears in the current fetched CNEOS Sentry table.
+CAW_0048,CAW_0048,close_approach_window,2002 UV36,matched_sentry,(2002 UV36),2087-2087,1,6.805e-06,-6.18,-6.18,0,0.016,Object appears in the current fetched CNEOS Sentry table.
+CAW_0048,CAW_0048,close_approach_window,2002 VX91,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0048,CAW_0048,close_approach_window,2002 VZ91,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0048,CAW_0048,close_approach_window,2002 VY91,matched_sentry,(2002 VY91),2112-2119,5,1.6521331e-06,-6.63,-6.74,0,0.021,Object appears in the current fetched CNEOS Sentry table.
+HEF_0188,HEF_0188,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0103,HEF_0103,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+CAW_0084,CAW_0084,close_approach_window,2016 CD31,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0084,CAW_0084,close_approach_window,4179,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0084,CAW_0084,close_approach_window,2016 TQ54,matched_sentry,(2016 TQ54),2082-2120,10,1.8043724e-06,-7.12,-7.50,0,0.012,Object appears in the current fetched CNEOS Sentry table.
+CAW_0084,CAW_0084,close_approach_window,2004 TE10,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0077,CAW_0077,close_approach_window,2025 LE,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0077,CAW_0077,close_approach_window,2023 GX,matched_sentry,(2023 GX),2104-2122,10,1.475194e-05,-6.05,-6.52,0,0.016,Object appears in the current fetched CNEOS Sentry table.
+CAW_0077,CAW_0077,close_approach_window,2004 KG17,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0077,CAW_0077,close_approach_window,2004 KF17,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0017,CAW_0017,close_approach_window,2020 XF4,matched_sentry,(2020 XF4),2108-2119,7,2.98247e-06,-7.17,-7.39,0,0.01,Object appears in the current fetched CNEOS Sentry table.
+CAW_0017,CAW_0017,close_approach_window,2000 YA,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0017,CAW_0017,close_approach_window,2017 WZ14,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0017,CAW_0017,close_approach_window,2001 AV43,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+month_2,Month 2,fireball_month_cluster,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0015,HEF_0015,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+CAW_0009,CAW_0009,close_approach_window,2023 MZ5,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0009,CAW_0009,close_approach_window,2019 AC3,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0009,CAW_0009,close_approach_window,2025 YL4,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0009,CAW_0009,close_approach_window,2012 VS76,matched_sentry,(2012 VS76),2081-2120,15,1.9442009e-05,-5.74,-6.05,0,0.014,Object appears in the current fetched CNEOS Sentry table.
+CAW_0020,CAW_0020,close_approach_window,2001 CP36,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0020,CAW_0020,close_approach_window,2022 EZ6,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0020,CAW_0020,close_approach_window,2001 DZ76,matched_sentry,(2001 DZ76),2079-2079,1,1.616e-09,-9.01,-9.01,0,0.028,Object appears in the current fetched CNEOS Sentry table.
+CAW_0020,CAW_0020,close_approach_window,2001 EC,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0030,CAW_0030,close_approach_window,2001 UP,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0030,CAW_0030,close_approach_window,2001 UD18,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0030,CAW_0030,close_approach_window,2001 UF5,matched_sentry,(2001 UF5),2058-2058,1,1.618e-09,-7.18,-7.18,0,0.11,Object appears in the current fetched CNEOS Sentry table.
+CAW_0030,CAW_0030,close_approach_window,2017 JQ1,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0058,CAW_0058,close_approach_window,2003 LN6,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0058,CAW_0058,close_approach_window,2003 ME1,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0058,CAW_0058,close_approach_window,2006 MV1,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0058,CAW_0058,close_approach_window,2003 MN,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0166,HEF_0166,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0112,HEF_0112,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0023,HEF_0023,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0107,HEF_0107,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0041,HEF_0041,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0116,HEF_0116,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0043,HEF_0043,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0153,HEF_0153,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+CAW_0050,CAW_0050,close_approach_window,2002 XV90,matched_sentry,(2002 XV90),2102-2113,2,1.33836e-07,-7.21,-7.22,0,0.035,Object appears in the current fetched CNEOS Sentry table.
+CAW_0050,CAW_0050,close_approach_window,2017 XY2,matched_sentry,(2017 XY2),2108-2108,1,9.773e-08,-8.36,-8.36,0,0.013,Object appears in the current fetched CNEOS Sentry table.
+CAW_0050,CAW_0050,close_approach_window,2015 VC2,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0079,HEF_0079,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0110,HEF_0110,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+CAW_0033,CAW_0033,close_approach_window,2001 YN2,matched_sentry,(2001 YN2),2067-2113,4,2.4118e-08,-7.42,-7.70,0,0.035,Object appears in the current fetched CNEOS Sentry table.
+CAW_0033,CAW_0033,close_approach_window,33342,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0033,CAW_0033,close_approach_window,2022 XC1,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0033,CAW_0033,close_approach_window,2001 XX103,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0090,CAW_0090,close_approach_window,2005 AU3,matched_sentry,(2005 AU3),2048-2122,64,1.64084499e-05,-5.37,-6.09,0,0.0215,Object appears in the current fetched CNEOS Sentry table.
+CAW_0090,CAW_0090,close_approach_window,2005 BS1,matched_sentry,(2005 BS1),2041-2041,1,6.744e-07,-6.74,-6.74,0,0.012,Object appears in the current fetched CNEOS Sentry table.
+CAW_0090,CAW_0090,close_approach_window,2005 BU,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0005,CAW_0005,close_approach_window,2025 FA2,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0005,CAW_0005,close_approach_window,2020 QL7,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0005,CAW_0005,close_approach_window,234145,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0047,HEF_0047,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0072,HEF_0072,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+CAW_0085,CAW_0085,close_approach_window,2004 RH357,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0085,CAW_0085,close_approach_window,2017 UR2,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0085,CAW_0085,close_approach_window,2004 UH1,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0018,CAW_0018,close_approach_window,2011 CL50,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0018,CAW_0018,close_approach_window,2001 BB16,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0018,CAW_0018,close_approach_window,2001 BA16,matched_sentry,(2001 BA16),2040-2051,3,9.4606e-06,-5.11,-5.14,0,0.023,Object appears in the current fetched CNEOS Sentry table.
+CAW_0015,CAW_0015,close_approach_window,2000 UK11,matched_sentry,(2000 UK11),2122-2122,2,0.00011895,-4.39,-4.47,0,0.034,Object appears in the current fetched CNEOS Sentry table.
+CAW_0015,CAW_0015,close_approach_window,2021 UX1,matched_sentry,(2021 UX1),2034-2121,103,9.57587935e-05,-6.06,-6.48,0,0.0048,Object appears in the current fetched CNEOS Sentry table.
+CAW_0015,CAW_0015,close_approach_window,494658,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0015,CAW_0015,close_approach_window,2025 VA1,matched_sentry,(2025 VA1),2060-2124,9,3.5222925e-05,-6.01,-6.04,0,0.0076,Object appears in the current fetched CNEOS Sentry table.
+CAW_0037,CAW_0037,close_approach_window,2025 DJ13,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0037,CAW_0037,close_approach_window,2002 EM7,matched_sentry,(2002 EM7),2117-2117,1,1.819e-09,-8.76,-8.76,0,0.045,Object appears in the current fetched CNEOS Sentry table.
+CAW_0037,CAW_0037,close_approach_window,2002 FW1,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0027,HEF_0027,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+CAW_0057,CAW_0057,close_approach_window,2003 LH,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0057,CAW_0057,close_approach_window,2003 LW2,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0057,CAW_0057,close_approach_window,2025 WB10,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0078,CAW_0078,close_approach_window,2004 LX5,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0078,CAW_0078,close_approach_window,2004 MS1,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0078,CAW_0078,close_approach_window,2004 MR1,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0016,CAW_0016,close_approach_window,2019 XN2,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0016,CAW_0016,close_approach_window,2025 WG16,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0016,CAW_0016,close_approach_window,2000 WL107,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0016,CAW_0016,close_approach_window,2019 AG7,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0025,CAW_0025,close_approach_window,2020 UC4,matched_sentry,(2020 UC4),2084-2121,9,7.70318e-07,-6.93,-7.39,0,0.021,Object appears in the current fetched CNEOS Sentry table.
+CAW_0025,CAW_0025,close_approach_window,2003 YN107,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0025,CAW_0025,close_approach_window,2020 KQ7,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0025,CAW_0025,close_approach_window,2020 MK3,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+54509, 54509 YORP (2000 PH5),repeating_close_approach_object,54509,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0160,HEF_0160,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0010,HEF_0010,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+CAW_0032,CAW_0032,close_approach_window,2001 WM15,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0032,CAW_0032,close_approach_window,2001 XX4,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0032,CAW_0032,close_approach_window,2001 YD1,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0034,CAW_0034,close_approach_window,2001 YB5,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0034,CAW_0034,close_approach_window,2009 BG,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0034,CAW_0034,close_approach_window,2002 AN129,matched_sentry,(2002 AN129),2064-2111,2,1.1134e-07,-7.42,-7.49,0,0.021,Object appears in the current fetched CNEOS Sentry table.
+HEF_0158,HEF_0158,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+2003 YN107,       (2003 YN107),repeating_close_approach_object,2003 YN107,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0058,HEF_0058,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+CAW_0035,CAW_0035,close_approach_window,2002 AL31,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0035,CAW_0035,close_approach_window,2002 CC14,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0035,CAW_0035,close_approach_window,2002 CA26,matched_sentry,(2002 CA26),2120-2120,1,2.415e-09,-9.33,-9.33,0,0.022,Object appears in the current fetched CNEOS Sentry table.
+HEF_0091,HEF_0091,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0147,HEF_0147,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0104,HEF_0104,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0075,HEF_0075,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0060,HEF_0060,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0096,HEF_0096,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+CAW_0042,CAW_0042,close_approach_window,2002 MN,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0042,CAW_0042,close_approach_window,2002 LZ45,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0084,HEF_0084,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0086,HEF_0086,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0059,HEF_0059,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0056,HEF_0056,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0050,HEF_0050,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+CAW_0069,CAW_0069,close_approach_window,2004 BN41,matched_sentry,(2004 BN41),2086-2122,9,2.354599e-06,-6.31,-6.66,0,0.024,Object appears in the current fetched CNEOS Sentry table.
+CAW_0069,CAW_0069,close_approach_window,2004 BV18,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0069,CAW_0069,close_approach_window,2019 BS2,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0195,HEF_0195,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0192,HEF_0192,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0039,HEF_0039,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0068,HEF_0068,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0040,HEF_0040,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+CAW_0044,CAW_0044,close_approach_window,2013 YP139,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0044,CAW_0044,close_approach_window,2002 PN,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0044,CAW_0044,close_approach_window,2021 CZ3,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0036,CAW_0036,close_approach_window,2002 CB26,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0036,CAW_0036,close_approach_window,2025 DU,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0028,CAW_0028,close_approach_window,2024 RH7,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0028,CAW_0028,close_approach_window,2020 RG2,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0175,HEF_0175,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+CAW_0008,CAW_0008,close_approach_window,2023 MC1,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0008,CAW_0008,close_approach_window,2000 LG6,matched_sentry,(2000 LG6),2081-2122,116,0.0021306256026,-4.99,-5.39,0,0.0053,Object appears in the current fetched CNEOS Sentry table.
+CAW_0023,CAW_0023,close_approach_window,363116,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0023,CAW_0023,close_approach_window,2015 HQ171,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0023,CAW_0023,close_approach_window,2026 JQ,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0201,HEF_0201,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+CAW_0021,CAW_0021,close_approach_window,2001 FR85,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0021,CAW_0021,close_approach_window,2001 EC16,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0021,CAW_0021,close_approach_window,2001 FO127,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0033,HEF_0033,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0151,HEF_0151,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0135,HEF_0135,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0113,HEF_0113,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0049,HEF_0049,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+2022 YG,       (2022 YG),repeating_close_approach_object,2022 YG,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0043,CAW_0043,close_approach_window,2002 NW,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0043,CAW_0043,close_approach_window,2022 YG,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0043,CAW_0043,close_approach_window,54509,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0087,HEF_0087,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+CAW_0040,CAW_0040,close_approach_window,2026 JA,matched_sentry,(2026 JA),2119-2124,2,6.27e-07,-7.30,-7.57,0,0.016,Object appears in the current fetched CNEOS Sentry table.
+CAW_0040,CAW_0040,close_approach_window,2002 JU15,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0163,HEF_0163,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+CAW_0070,CAW_0070,close_approach_window,2004 CA2,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0070,CAW_0070,close_approach_window,2004 BK86,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0142,HEF_0142,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+CAW_0087,CAW_0087,close_approach_window,2004 VM24,matched_sentry,(2004 VM24),2049-2114,44,2.41220417e-05,-5.00,-5.64,0,0.025,Object appears in the current fetched CNEOS Sentry table.
+CAW_0087,CAW_0087,close_approach_window,2004 WC1,matched_sentry,(2004 WC1),2117-2117,1,1.094e-07,-7.98,-7.98,0,0.019,Object appears in the current fetched CNEOS Sentry table.
+CAW_0054,CAW_0054,close_approach_window,2026 HL,matched_sentry,(2026 HL),2096-2126,33,2.23781288e-05,-6.67,-7.14,0,0.0073,Object appears in the current fetched CNEOS Sentry table.
+CAW_0054,CAW_0054,close_approach_window,2003 GD42,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0054,CAW_0054,close_approach_window,2022 HA,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0019,HEF_0019,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0184,HEF_0184,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+month_5,Month 5,fireball_month_cluster,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+CAW_0013,CAW_0013,close_approach_window,2000 SM10,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0013,CAW_0013,close_approach_window,2020 GB1,matched_sentry,(2020 GB1),2049-2120,28,2.8110414e-05,-5.36,-5.47,0,0.014,Object appears in the current fetched CNEOS Sentry table.
+CAW_0075,CAW_0075,close_approach_window,2004 HC33,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0075,CAW_0075,close_approach_window,2004 HT59,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0065,CAW_0065,close_approach_window,2003 UT55,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0065,CAW_0065,close_approach_window,2003 TH2,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0090,HEF_0090,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+2001 GO2,       (2001 GO2),repeating_close_approach_object,2001 GO2,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0046,CAW_0046,close_approach_window,2020 RD4,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0046,CAW_0046,close_approach_window,2021 PC7,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0046,CAW_0046,close_approach_window,2002 TZ59,matched_sentry,(2002 TZ59),2040-2040,1,5.157e-09,-6.38,-6.38,0,0.085,Object appears in the current fetched CNEOS Sentry table.
+CAW_0091,CAW_0091,close_approach_window,2005 AX28,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0091,CAW_0091,close_approach_window,2018 BJ6,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0189,HEF_0189,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+CAW_0019,CAW_0019,close_approach_window,523804,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0019,CAW_0019,close_approach_window,2005 VL1,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+2004 PU42,       (2004 PU42),repeating_close_approach_object,2004 PU42,matched_sentry,(2004 PU42),2071-2122,45,7.61514717e-05,-5.12,-5.84,0,0.015,Object appears in the current fetched CNEOS Sentry table.
+month_10,Month 10,fireball_month_cluster,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+CAW_0049,CAW_0049,close_approach_window,2025 MW89,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0049,CAW_0049,close_approach_window,2025 WK5,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0132,HEF_0132,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0098,HEF_0098,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0194,HEF_0194,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+367943,367943 Duende (2012 DA14),repeating_close_approach_object,367943,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+2021 CZ3,       (2021 CZ3),repeating_close_approach_object,2021 CZ3,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0045,CAW_0045,close_approach_window,2002 NY40,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0061,HEF_0061,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+2001 XX4,       (2001 XX4),repeating_close_approach_object,2001 XX4,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+2022 JF,       (2022 JF),repeating_close_approach_object,2022 JF,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0026,HEF_0026,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+2015 RT1,       (2015 RT1),repeating_close_approach_object,2015 RT1,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0059,CAW_0059,close_approach_window,2022 YG,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0059,CAW_0059,close_approach_window,54509,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0176,HEF_0176,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0114,HEF_0114,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0143,HEF_0143,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0202,HEF_0202,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+2004 CZ1,       (2004 CZ1),repeating_close_approach_object,2004 CZ1,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+25143, 25143 Itokawa (1998 SF36),repeating_close_approach_object,25143,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0070,HEF_0070,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+2017 XY2,       (2017 XY2),repeating_close_approach_object,2017 XY2,matched_sentry,(2017 XY2),2108-2108,1,9.773e-08,-8.36,-8.36,0,0.013,Object appears in the current fetched CNEOS Sentry table.
+HEF_0001,HEF_0001,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0006,HEF_0006,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+2001 FR85,       (2001 FR85),repeating_close_approach_object,2001 FR85,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+2020 KQ7,       (2020 KQ7),repeating_close_approach_object,2020 KQ7,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0061,CAW_0061,close_approach_window,2003 QB30,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0063,HEF_0063,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0029,HEF_0029,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+CAW_0024,CAW_0024,close_approach_window,2001 KU66,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0024,CAW_0024,close_approach_window,2026 LY,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0052,HEF_0052,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0038,HEF_0038,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0004,HEF_0004,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0002,HEF_0002,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0108,HEF_0108,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0115,HEF_0115,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+2025 PN7,       (2025 PN7),repeating_close_approach_object,2025 PN7,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0088,HEF_0088,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0009,HEF_0009,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0083,HEF_0083,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+CAW_0003,CAW_0003,close_approach_window,2020 KQ7,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+CAW_0003,CAW_0003,close_approach_window,2016 DX30,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0054,HEF_0054,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0155,HEF_0155,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0156,HEF_0156,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0196,HEF_0196,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0042,HEF_0042,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0128,HEF_0128,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0183,HEF_0183,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0109,HEF_0109,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+2002 PN,       (2002 PN),repeating_close_approach_object,2002 PN,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0199,HEF_0199,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+CAW_0002,CAW_0002,close_approach_window,2019 BZ,matched_sentry,(2019 BZ),2077-2122,37,2.97549714e-05,-6.01,-6.24,0,0.0098,Object appears in the current fetched CNEOS Sentry table.
+CAW_0002,CAW_0002,close_approach_window,2016 AU65,not_matched_in_fetched_sentry,,,,,,,,,No match in the current fetched Sentry table. This is not proof of zero risk; it only means no match in this run's Sentry data.
+HEF_0138,HEF_0138,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0073,HEF_0073,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0141,HEF_0141,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0003,HEF_0003,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0180,HEF_0180,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0065,HEF_0065,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0118,HEF_0118,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0030,HEF_0030,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0074,HEF_0074,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0071,HEF_0071,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0146,HEF_0146,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0076,HEF_0076,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0133,HEF_0133,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0101,HEF_0101,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0150,HEF_0150,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0082,HEF_0082,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0100,HEF_0100,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+2025 SY1,       (2025 SY1),repeating_close_approach_object,2025 SY1,matched_sentry,(2025 SY1),2042-2124,51,0.000148716402,-7.08,-7.23,0,0.0016,Object appears in the current fetched CNEOS Sentry table.
+HEF_0198,HEF_0198,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0099,HEF_0099,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0187,HEF_0187,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0130,HEF_0130,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0137,HEF_0137,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0037,HEF_0037,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0174,HEF_0174,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0186,HEF_0186,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0159,HEF_0159,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0106,HEF_0106,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+HEF_0144,HEF_0144,high_energy_fireball_window,,not_applicable,,,,,,,,,Candidate is not a specific asteroid/comet object.
+2020 DK,       (2020 DK),repeating_close_approach_object,2020 DK,matched_sentry,(2020 DK),2089-2122,34,1.565146e-05,-5.54,-6.31,0,0.021,Object appears in the current fetched CNEOS Sentry table.

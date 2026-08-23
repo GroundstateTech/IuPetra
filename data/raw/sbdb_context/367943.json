@@ -1,0 +1,160 @@
+{
+  "object": {
+    "des": "367943",
+    "fullname": "367943 Duende (2012 DA14)",
+    "kind": "an",
+    "neo": true,
+    "orbit_class": {
+      "code": "ATE",
+      "name": "Aten"
+    },
+    "orbit_id": "81",
+    "pha": false,
+    "prefix": null,
+    "shortname": "367943 Duende",
+    "spkid": "20367943"
+  },
+  "orbit": {
+    "comment": null,
+    "condition_code": "0",
+    "cov_epoch": "2456158.5",
+    "data_arc": "364",
+    "elements": [
+      {
+        "label": "e",
+        "name": "e",
+        "sigma": "1.2e-07",
+        "title": "eccentricity",
+        "units": null,
+        "value": "0.0893"
+      },
+      {
+        "label": "a",
+        "name": "a",
+        "sigma": "8.8e-08",
+        "title": "semi-major axis",
+        "units": "au",
+        "value": "0.911"
+      },
+      {
+        "label": "q",
+        "name": "q",
+        "sigma": "1.9e-07",
+        "title": "perihelion distance",
+        "units": "au",
+        "value": "0.829"
+      },
+      {
+        "label": "i",
+        "name": "i",
+        "sigma": "9.1e-07",
+        "title": "inclination; angle with respect to x-y ecliptic plane",
+        "units": "deg",
+        "value": "11.6"
+      },
+      {
+        "label": "node",
+        "name": "om",
+        "sigma": "3.2e-06",
+        "title": "longitude of the ascending node",
+        "units": "deg",
+        "value": "147"
+      },
+      {
+        "label": "peri",
+        "name": "w",
+        "sigma": "4e-05",
+        "title": "argument of perihelion",
+        "units": "deg",
+        "value": "196"
+      },
+      {
+        "label": "M",
+        "name": "ma",
+        "sigma": "0.0012",
+        "title": "mean anomaly",
+        "units": "deg",
+        "value": "279"
+      },
+      {
+        "label": "tp",
+        "name": "tp",
+        "sigma": "0.0011",
+        "title": "time of perihelion passage",
+        "units": "TDB",
+        "value": "2461272.264"
+      },
+      {
+        "label": "period",
+        "name": "per",
+        "sigma": "4.6e-05",
+        "title": "sidereal orbital period",
+        "units": "d",
+        "value": "317"
+      },
+      {
+        "label": "n",
+        "name": "n",
+        "sigma": "1.7e-07",
+        "title": "mean motion",
+        "units": "deg/d",
+        "value": "1.13"
+      },
+      {
+        "label": "Q",
+        "name": "ad",
+        "sigma": "9.6e-08",
+        "title": "aphelion distance",
+        "units": "au",
+        "value": "0.992"
+      }
+    ],
+    "epoch": "2461200.5",
+    "equinox": "J2000",
+    "first_obs": "2012-02-23",
+    "last_obs": "2013-02-21",
+    "model_pars": [],
+    "moid": "0.000476",
+    "moid_jup": "4.12",
+    "n_del_obs_used": 4,
+    "n_dop_obs_used": 4,
+    "n_obs_used": 1017,
+    "not_valid_after": null,
+    "not_valid_before": null,
+    "orbit_id": "81",
+    "pe_used": "DE441",
+    "producer": "Otto Matic",
+    "rms": "0.23",
+    "sb_used": "SB441-N16",
+    "soln_date": "2021-04-14 10:00:05",
+    "source": "JPL",
+    "t_jup": "6.531",
+    "two_body": null
+  },
+  "phys_par": [
+    {
+      "desc": "absolute magnitude (magnitude at 1 au from Sun and observer)",
+      "name": "H",
+      "notes": null,
+      "ref": "MPO698432",
+      "sigma": null,
+      "title": "absolute magnitude",
+      "units": null,
+      "value": "24.19"
+    },
+    {
+      "desc": "body rotation period (synodic)",
+      "name": "rot_per",
+      "notes": "REFERENCE LIST:[Gary, B.L. (2013) Minor Planet Bull. 40, 122-124.], [de Leon, J.; Ortiz, J.L.; Pinilla-Alonso, N.; Cabrera-Lavers, A.; et al. (2013) Astron. Astrophys. 555, L2.], [Benson, C.; Scheeres, D.J.; Moskovitz, N. (2017) DPS #49, 117.05.], [Moskovitz, N.; Benson, C.; Scheeres, D.; Endicott, T.; et al. (2020) Icarus 340, id.113519. arXiv:191100609M]",
+      "ref": "LCDB (Rev. 2023-October); Warner et al., 2009",
+      "sigma": null,
+      "title": "rotation period",
+      "units": "h",
+      "value": "8.724"
+    }
+  ],
+  "signature": {
+    "source": "NASA/JPL Small-Body Database (SBDB) API",
+    "version": "1.3"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "close_approach_cluster_distance_au": 0.02,
+  "close_approach_date_max": "2035-01-01",
+  "close_approach_date_min": "2000-01-01",
+  "close_approach_distance_max_au": "0.05",
+  "close_approach_limit": 1000,
+  "close_approach_window_days": 14,
+  "fireball_limit": 500,
+  "high_energy_fireball_kt_threshold": 0.1,
+  "high_energy_window_days": 14,
+  "repeat_object_min_count": 2,
+  "sbdb_enrichment_limit": 25,
+  "top_candidate_packet_limit": 10,
+  "top_report_limit": 50,
+  "watchlist_min_score": 40.0
+}

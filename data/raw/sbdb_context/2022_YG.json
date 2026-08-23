@@ -1,0 +1,149 @@
+{
+  "object": {
+    "des": "2022 YG",
+    "fullname": "(2022 YG)",
+    "kind": "au",
+    "neo": true,
+    "orbit_class": {
+      "code": "APO",
+      "name": "Apollo"
+    },
+    "orbit_id": "9",
+    "pha": false,
+    "prefix": null,
+    "spkid": "54335005"
+  },
+  "orbit": {
+    "comment": null,
+    "condition_code": "0",
+    "cov_epoch": "2460154.5",
+    "data_arc": "717",
+    "elements": [
+      {
+        "label": "e",
+        "name": "e",
+        "sigma": "6e-07",
+        "title": "eccentricity",
+        "units": null,
+        "value": "0.196"
+      },
+      {
+        "label": "a",
+        "name": "a",
+        "sigma": "9.4e-09",
+        "title": "semi-major axis",
+        "units": "au",
+        "value": "1"
+      },
+      {
+        "label": "q",
+        "name": "q",
+        "sigma": "6.1e-07",
+        "title": "perihelion distance",
+        "units": "au",
+        "value": "0.807"
+      },
+      {
+        "label": "i",
+        "name": "i",
+        "sigma": "1.6e-05",
+        "title": "inclination; angle with respect to x-y ecliptic plane",
+        "units": "deg",
+        "value": "2.37"
+      },
+      {
+        "label": "node",
+        "name": "om",
+        "sigma": "6.9e-05",
+        "title": "longitude of the ascending node",
+        "units": "deg",
+        "value": "274"
+      },
+      {
+        "label": "peri",
+        "name": "w",
+        "sigma": "9e-05",
+        "title": "argument of perihelion",
+        "units": "deg",
+        "value": "271"
+      },
+      {
+        "label": "M",
+        "name": "ma",
+        "sigma": "2e-05",
+        "title": "mean anomaly",
+        "units": "deg",
+        "value": "88.2"
+      },
+      {
+        "label": "tp",
+        "name": "tp",
+        "sigma": "2e-05",
+        "title": "time of perihelion passage",
+        "units": "TDB",
+        "value": "2461110.430"
+      },
+      {
+        "label": "period",
+        "name": "per",
+        "sigma": "5.2e-06",
+        "title": "sidereal orbital period",
+        "units": "d",
+        "value": "368"
+      },
+      {
+        "label": "n",
+        "name": "n",
+        "sigma": "1.4e-08",
+        "title": "mean motion",
+        "units": "deg/d",
+        "value": "0.979"
+      },
+      {
+        "label": "Q",
+        "name": "ad",
+        "sigma": "1.1e-08",
+        "title": "aphelion distance",
+        "units": "au",
+        "value": "1.2"
+      }
+    ],
+    "epoch": "2461200.5",
+    "equinox": "J2000",
+    "first_obs": "2022-12-15",
+    "last_obs": "2024-12-01",
+    "model_pars": [],
+    "moid": "0.00333",
+    "moid_jup": "3.76",
+    "n_del_obs_used": null,
+    "n_dop_obs_used": null,
+    "n_obs_used": 61,
+    "not_valid_after": null,
+    "not_valid_before": null,
+    "orbit_id": "9",
+    "pe_used": "DE441",
+    "producer": "Otto Matic",
+    "rms": "0.66",
+    "sb_used": "SB441-N16",
+    "soln_date": "2024-12-01 05:19:35",
+    "source": "JPL",
+    "t_jup": "6.042",
+    "two_body": null
+  },
+  "phys_par": [
+    {
+      "desc": "absolute magnitude (magnitude at 1 au from Sun and observer)",
+      "name": "H",
+      "notes": "autocmod 3.0e",
+      "ref": "E2024X11",
+      "sigma": ".36077",
+      "title": "absolute magnitude",
+      "units": null,
+      "value": "26.75"
+    }
+  ],
+  "signature": {
+    "source": "NASA/JPL Small-Body Database (SBDB) API",
+    "version": "1.3"
+  }
+}

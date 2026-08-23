@@ -1,0 +1,249 @@
+IuPetra v1.3.1 - Top Candidate Packet
+====================================
+
+Purpose:
+This packet summarizes the strongest anomaly-hunting candidates from the current run.
+These are not official impact-risk predictions. They are leads for investigation.
+Orbit context reports: object_orbit_context.csv, sentry_crosscheck.csv, candidate_orbit_review.csv.
+
+Generated UTC: 2026-06-10 18:53:15 UTC
+
+Rank 1: HEF_0011
+------------------------------------------------------------------------
+Type: high_energy_fireball_window
+ID: HEF_0011
+Window/Date: 2013-02-07 to 2013-02-21
+Score: 100.0
+Confidence: high relative priority
+
+Summary:
+HEF_0011 groups high-energy fireballs into a short time window.
+
+Supporting evidence:
+Pattern source: high_energy_fireball_windows.csv. Reason: 3 high-energy fireballs; total energy 441.31 kt. Score: 100.0.
+
+Limitations:
+A high-energy window can be dominated by one large bolide and does not automatically prove a debris stream.
+
+Next check:
+Check whether the dates line up with known meteor showers, Taurid activity, Perseids, Geminids, Leonids, or sporadic fireball seasonality.
+
+Research questions:
+- Do the events in HEF_0011 line up with a known meteor stream?
+- Is the window dominated by one event or multiple comparable events?
+
+Rank 2: HEF_0097
+------------------------------------------------------------------------
+Type: high_energy_fireball_window
+ID: HEF_0097
+Window/Date: 2018-12-18 to 2019-01-01
+Score: 100.0
+Confidence: high relative priority
+
+Summary:
+HEF_0097 groups high-energy fireballs into a short time window.
+
+Supporting evidence:
+Pattern source: high_energy_fireball_windows.csv. Reason: 2 high-energy fireballs; total energy 49.28 kt. Score: 100.0.
+
+Limitations:
+A high-energy window can be dominated by one large bolide and does not automatically prove a debris stream.
+
+Next check:
+Check whether the dates line up with known meteor showers, Taurid activity, Perseids, Geminids, Leonids, or sporadic fireball seasonality.
+
+Research questions:
+- Do the events in HEF_0097 line up with a known meteor stream?
+- Is the window dominated by one event or multiple comparable events?
+
+Rank 3: HEF_0055
+------------------------------------------------------------------------
+Type: high_energy_fireball_window
+ID: HEF_0055
+Window/Date: 2016-02-06 to 2016-02-20
+Score: 100.0
+Confidence: high relative priority
+
+Summary:
+HEF_0055 groups high-energy fireballs into a short time window.
+
+Supporting evidence:
+Pattern source: high_energy_fireball_windows.csv. Reason: 3 high-energy fireballs; total energy 13.73 kt. Score: 100.0.
+
+Limitations:
+A high-energy window can be dominated by one large bolide and does not automatically prove a debris stream.
+
+Next check:
+Check whether the dates line up with known meteor showers, Taurid activity, Perseids, Geminids, Leonids, or sporadic fireball seasonality.
+
+Research questions:
+- Do the events in HEF_0055 line up with a known meteor stream?
+- Is the window dominated by one event or multiple comparable events?
+
+Rank 4: HEF_0125
+------------------------------------------------------------------------
+Type: high_energy_fireball_window
+ID: HEF_0125
+Window/Date: 2020-12-22 to 2021-01-05
+Score: 100.0
+Confidence: high relative priority
+
+Summary:
+HEF_0125 groups high-energy fireballs into a short time window.
+
+Supporting evidence:
+Pattern source: high_energy_fireball_windows.csv. Reason: 3 high-energy fireballs; total energy 12.4 kt. Score: 100.0.
+
+Limitations:
+A high-energy window can be dominated by one large bolide and does not automatically prove a debris stream.
+
+Next check:
+Check whether the dates line up with known meteor showers, Taurid activity, Perseids, Geminids, Leonids, or sporadic fireball seasonality.
+
+Research questions:
+- Do the events in HEF_0125 line up with a known meteor stream?
+- Is the window dominated by one event or multiple comparable events?
+
+Rank 5: HEF_0013
+------------------------------------------------------------------------
+Type: high_energy_fireball_window
+ID: HEF_0013
+Window/Date: 2013-04-21 to 2013-05-05
+Score: 100.0
+Confidence: high relative priority
+
+Summary:
+HEF_0013 groups high-energy fireballs into a short time window.
+
+Supporting evidence:
+Pattern source: high_energy_fireball_windows.csv. Reason: 2 high-energy fireballs; total energy 12.3 kt. Score: 100.0.
+
+Limitations:
+A high-energy window can be dominated by one large bolide and does not automatically prove a debris stream.
+
+Next check:
+Check whether the dates line up with known meteor showers, Taurid activity, Perseids, Geminids, Leonids, or sporadic fireball seasonality.
+
+Research questions:
+- Do the events in HEF_0013 line up with a known meteor stream?
+- Is the window dominated by one event or multiple comparable events?
+
+Rank 6: HEF_0081
+------------------------------------------------------------------------
+Type: high_energy_fireball_window
+ID: HEF_0081
+Window/Date: 2017-12-15 to 2017-12-29
+Score: 100.0
+Confidence: high relative priority
+
+Summary:
+HEF_0081 groups high-energy fireballs into a short time window.
+
+Supporting evidence:
+Pattern source: high_energy_fireball_windows.csv. Reason: 3 high-energy fireballs; total energy 8.56 kt. Score: 100.0.
+
+Limitations:
+A high-energy window can be dominated by one large bolide and does not automatically prove a debris stream.
+
+Next check:
+Check whether the dates line up with known meteor showers, Taurid activity, Perseids, Geminids, Leonids, or sporadic fireball seasonality.
+
+Research questions:
+- Do the events in HEF_0081 line up with a known meteor stream?
+- Is the window dominated by one event or multiple comparable events?
+
+Rank 7: HEF_0140
+------------------------------------------------------------------------
+Type: high_energy_fireball_window
+ID: HEF_0140
+Window/Date: 2022-01-28 to 2022-02-11
+Score: 100.0
+Confidence: high relative priority
+
+Summary:
+HEF_0140 groups high-energy fireballs into a short time window.
+
+Supporting evidence:
+Pattern source: high_energy_fireball_windows.csv. Reason: 4 high-energy fireballs; total energy 8.52 kt. Score: 100.0.
+
+Limitations:
+A high-energy window can be dominated by one large bolide and does not automatically prove a debris stream.
+
+Next check:
+Check whether the dates line up with known meteor showers, Taurid activity, Perseids, Geminids, Leonids, or sporadic fireball seasonality.
+
+Research questions:
+- Do the events in HEF_0140 line up with a known meteor stream?
+- Is the window dominated by one event or multiple comparable events?
+
+Rank 8: HEF_0093
+------------------------------------------------------------------------
+Type: high_energy_fireball_window
+ID: HEF_0093
+Window/Date: 2018-09-13 to 2018-09-27
+Score: 100.0
+Confidence: high relative priority
+
+Summary:
+HEF_0093 groups high-energy fireballs into a short time window.
+
+Supporting evidence:
+Pattern source: high_energy_fireball_windows.csv. Reason: 5 high-energy fireballs; total energy 2.81 kt. Score: 100.0.
+
+Limitations:
+A high-energy window can be dominated by one large bolide and does not automatically prove a debris stream.
+
+Next check:
+Check whether the dates line up with known meteor showers, Taurid activity, Perseids, Geminids, Leonids, or sporadic fireball seasonality.
+
+Research questions:
+- Do the events in HEF_0093 line up with a known meteor stream?
+- Is the window dominated by one event or multiple comparable events?
+
+Rank 9: HEF_0036
+------------------------------------------------------------------------
+Type: high_energy_fireball_window
+ID: HEF_0036
+Window/Date: 2014-11-26 to 2014-12-10
+Score: 100.0
+Confidence: high relative priority
+
+Summary:
+HEF_0036 groups high-energy fireballs into a short time window.
+
+Supporting evidence:
+Pattern source: high_energy_fireball_windows.csv. Reason: 5 high-energy fireballs; total energy 2.79 kt. Score: 100.0.
+
+Limitations:
+A high-energy window can be dominated by one large bolide and does not automatically prove a debris stream.
+
+Next check:
+Check whether the dates line up with known meteor showers, Taurid activity, Perseids, Geminids, Leonids, or sporadic fireball seasonality.
+
+Research questions:
+- Do the events in HEF_0036 line up with a known meteor stream?
+- Is the window dominated by one event or multiple comparable events?
+
+Rank 10: HEF_0148
+------------------------------------------------------------------------
+Type: high_energy_fireball_window
+ID: HEF_0148
+Window/Date: 2022-07-20 to 2022-08-03
+Score: 100.0
+Confidence: high relative priority
+
+Summary:
+HEF_0148 groups high-energy fireballs into a short time window.
+
+Supporting evidence:
+Pattern source: high_energy_fireball_windows.csv. Reason: 5 high-energy fireballs; total energy 2.62 kt. Score: 100.0.
+
+Limitations:
+A high-energy window can be dominated by one large bolide and does not automatically prove a debris stream.
+
+Next check:
+Check whether the dates line up with known meteor showers, Taurid activity, Perseids, Geminids, Leonids, or sporadic fireball seasonality.
+
+Research questions:
+- Do the events in HEF_0148 line up with a known meteor stream?
+- Is the window dominated by one event or multiple comparable events?

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Repeating Close-Approach Objects - IuPetra Viewer</title>
+  <style>
+    :root {
+      --void: #050403;
+      --panel: #17100b;
+      --panel2: #2a1710;
+      --gold: #f4bd52;
+      --amber: #d98736;
+      --cream: #ffe8b9;
+      --ivory: #fff6df;
+      --muted: rgba(255, 232, 185, 0.72);
+      --line: rgba(244, 189, 82, 0.28);
+      --redspot: #b6402d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ivory);
+      font-family: "Trebuchet MS", Arial, sans-serif;
+      background:
+        linear-gradient(180deg, rgba(255,232,185,0.05) 0 8%, rgba(106,63,37,0.20) 8% 19%, rgba(42,23,16,0.40) 19% 38%, rgba(215,111,46,0.12) 38% 48%, rgba(5,4,3,1) 48% 100%),
+        #050403;
+    }
+    header {
+      padding: 28px clamp(18px, 4vw, 54px);
+      border-bottom: 1px solid var(--line);
+      background: rgba(5,4,3,0.72);
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      backdrop-filter: blur(10px);
+    }
+    .topline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--cream);
+      font-size: clamp(1.8rem, 4vw, 3.2rem);
+    }
+    .meta {
+      color: var(--muted);
+      margin-top: 8px;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    a.button {
+      color: #231005;
+      background: linear-gradient(135deg, var(--gold), var(--amber));
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-weight: 800;
+    }
+    a.button.secondary {
+      color: var(--ivory);
+      background: rgba(5,4,3,0.36);
+      border: 1px solid var(--line);
+    }
+    main {
+      padding: 24px clamp(18px, 4vw, 54px) 60px;
+    }
+    .viewer-panel {
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(23,16,11,0.86);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.35);
+      overflow: hidden;
+    }
+    .table-wrap {
+      overflow: auto;
+      max-height: 74vh;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      min-width: 900px;
+    }
+    th, td {
+      border-bottom: 1px solid rgba(255,232,185,0.10);
+      padding: 9px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      position: sticky;
+      top: 0;
+      background: #2a1710;
+      color: var(--gold);
+      z-index: 2;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-size: 0.72rem;
+    }
+    td {
+      color: var(--ivory);
+    }
+    tr:hover td {
+      background: rgba(215,111,46,0.10);
+    }
+    pre {
+      margin: 0;
+      white-space: pre-wrap;
+      padding: 22px;
+      color: var(--ivory);
+      font-family: Consolas, "Courier New", monospace;
+      line-height: 1.5;
+    }
+    .empty, .truncated {
+      color: var(--muted);
+      padding: 22px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topline">
+      <div>
+        <h1>Repeating Close-Approach Objects</h1>
+        <div class="meta">CSV Data Sheet · Repeat visitors in close-approach data · Source: repeating_close_approach_objects.csv</div>
+      </div>
+      <div class="actions">
+        <a class="button" href="../00_START_HERE/IuPetra_START_HERE.html">Dashboard</a>
+        <a class="button secondary" href="../02_PATTERN_FINDER/repeating_close_approach_objects.csv">Open raw file</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="viewer-panel">
+      <div class='table-wrap'><table><thead><tr><th>rank</th><th>object_designation</th><th>object_fullname</th><th>approach_count</th><th>first_close_approach_datetime_tdb</th><th>last_close_approach_datetime_tdb</th><th>minimum_distance_au</th><th>maximum_velocity_relative_km_s</th><th>absolute_magnitude_h</th><th>diameter_km</th><th>repeat_score</th></tr></thead><tbody><tr><td>1</td><td>54509</td><td> 54509 YORP (2000 PH5)</td><td>5</td><td>2000-Jul-26 05:32</td><td>2004-Jul-25 10:16</td><td>0.011573118993</td><td>7.623867</td><td>22.66</td><td></td><td>76.868</td></tr><tr><td>2</td><td>2003 YN107</td><td>       (2003 YN107)</td><td>6</td><td>2000-Jun-25 23:36</td><td>2004-Dec-27 09:45</td><td>0.014844189405</td><td>2.351255</td><td>26.5</td><td></td><td>72.269</td></tr><tr><td>3</td><td>2022 YG</td><td>       (2022 YG)</td><td>4</td><td>2001-Jul-17 14:36</td><td>2004-Jul-17 07:15</td><td>0.018295035852</td><td>5.657722</td><td>26.75</td><td></td><td>61.852</td></tr><tr><td>4</td><td>2001 GO2</td><td>       (2001 GO2)</td><td>3</td><td>2000-Apr-06 23:09</td><td>2002-Apr-08 07:58</td><td>0.016103420794</td><td>6.43447</td><td>24.3</td><td></td><td>53.555</td></tr><tr><td>5</td><td>2004 PU42</td><td>       (2004 PU42)</td><td>2</td><td>2002-Aug-11 13:02</td><td>2004-Aug-15 07:32</td><td>0.005348995537</td><td>11.448731</td><td>26.7</td><td></td><td>52.515</td></tr><tr><td>6</td><td>367943</td><td>367943 Duende (2012 DA14)</td><td>2</td><td>2003-Aug-18 07:57</td><td>2004-Aug-19 12:36</td><td>0.008131098292</td><td>6.685568</td><td>24.19</td><td></td><td>48.464</td></tr><tr><td>7</td><td>2021 CZ3</td><td>       (2021 CZ3)</td><td>2</td><td>2002-Aug-14 04:18</td><td>2004-Feb-12 02:06</td><td>0.012080379619</td><td>10.661656</td><td>31.0</td><td></td><td>48.083</td></tr><tr><td>8</td><td>2001 XX4</td><td>       (2001 XX4)</td><td>2</td><td>2001-Dec-07 10:33</td><td>2002-Dec-09 08:31</td><td>0.019492183224</td><td>18.971574</td><td>22.1</td><td></td><td>47.79</td></tr><tr><td>9</td><td>2022 JF</td><td>       (2022 JF)</td><td>2</td><td>2003-May-03 18:19</td><td>2004-Nov-03 01:05</td><td>0.018744779746</td><td>17.277882</td><td>24.77</td><td></td><td>47.392</td></tr><tr><td>10</td><td>2015 RT1</td><td>       (2015 RT1)</td><td>2</td><td>2000-Aug-24 17:49</td><td>2003-Jan-05 08:39</td><td>0.011737892563</td><td>8.049311</td><td>25.41</td><td></td><td>46.982</td></tr><tr><td>11</td><td>2004 CZ1</td><td>       (2004 CZ1)</td><td>2</td><td>2002-Jun-28 09:42</td><td>2004-Feb-24 16:02</td><td>0.015981576808</td><td>11.2578</td><td>24.39</td><td></td><td>46.04</td></tr><tr><td>12</td><td>25143</td><td> 25143 Itokawa (1998 SF36)</td><td>2</td><td>2001-Mar-29 18:37</td><td>2004-Jun-26 20:00</td><td>0.012896865253</td><td>6.884833</td><td>19.26</td><td>0.33</td><td>45.704</td></tr><tr><td>13</td><td>2017 XY2</td><td>       (2017 XY2)</td><td>2</td><td>2002-Dec-15 16:36</td><td>2004-Jun-09 03:10</td><td>0.014635013331</td><td>8.212137</td><td>27.2</td><td></td><td>45.325</td></tr><tr><td>14</td><td>2001 FR85</td><td>       (2001 FR85)</td><td>2</td><td>2001-Mar-23 07:48</td><td>2001-Sep-15 19:38</td><td>0.011161607206</td><td>2.947504</td><td>24.8</td><td></td><td>44.777</td></tr><tr><td>15</td><td>2020 KQ7</td><td>       (2020 KQ7)</td><td>2</td><td>2000-Feb-09 10:11</td><td>2001-Jun-28 01:35</td><td>0.011545593511</td><td>3.360443</td><td>26.5</td><td></td><td>44.753</td></tr><tr><td>16</td><td>2025 PN7</td><td>       (2025 PN7)</td><td>3</td><td>2002-Aug-02 15:28</td><td>2004-Aug-04 17:26</td><td>0.029548615305</td><td>2.668811</td><td>26.41</td><td></td><td>43.605</td></tr><tr><td>17</td><td>2002 PN</td><td>       (2002 PN)</td><td>2</td><td>2002-Aug-04 13:32</td><td>2004-Jan-28 19:47</td><td>0.016225340456</td><td>5.0217</td><td>24.8</td><td></td><td>42.776</td></tr><tr><td>18</td><td>2025 SY1</td><td>       (2025 SY1)</td><td>2</td><td>2001-Apr-30 03:52</td><td>2004-Sep-17 18:12</td><td>0.020341750518</td><td>7.542792</td><td>31.65</td><td></td><td>41.566</td></tr><tr><td>19</td><td>2020 DK</td><td>       (2020 DK)</td><td>2</td><td>2000-Mar-11 10:50</td><td>2004-Mar-08 13:42</td><td>0.024188605712</td><td>10.278145</td><td>26.06</td><td></td><td>40.626</td></tr><tr><td>20</td><td>2015 VU64</td><td>       (2015 VU64)</td><td>2</td><td>2000-Nov-02 07:41</td><td>2002-Mar-14 14:58</td><td>0.022180539486</td><td>4.569882</td><td>30.6</td><td></td><td>38.977</td></tr><tr><td>21</td><td>2016 TY55</td><td>       (2016 TY55)</td><td>2</td><td>2000-Oct-20 04:38</td><td>2002-Apr-04 10:29</td><td>0.022855951345</td><td>5.037609</td><td>26.9</td><td></td><td>38.805</td></tr><tr><td>22</td><td>2001 BF10</td><td>       (2001 BF10)</td><td>2</td><td>2001-Jan-28 05:21</td><td>2003-Apr-21 05:56</td><td>0.026506160819</td><td>8.959256</td><td>22.6</td><td></td><td>38.576</td></tr><tr><td>23</td><td>2017 FB3</td><td>       (2017 FB3)</td><td>2</td><td>2000-Sep-10 05:07</td><td>2002-Feb-24 10:21</td><td>0.022920655426</td><td>4.599844</td><td>25.9</td><td></td><td>38.548</td></tr><tr><td>24</td><td>2025 BL</td><td>       (2025 BL)</td><td>2</td><td>2004-Jan-23 02:51</td><td>2005-Jan-19 13:23</td><td>0.030775025991</td><td>7.238395</td><td>25.56</td><td></td><td>35.154</td></tr><tr><td>25</td><td>2004 SC56</td><td>       (2004 SC56)</td><td>2</td><td>2002-Oct-09 18:32</td><td>2004-Oct-04 21:39</td><td>0.035112615165</td><td>11.170991</td><td>22.7</td><td>0.291</td><td>34.518</td></tr><tr><td>26</td><td>2001 SY269</td><td>       (2001 SY269)</td><td>2</td><td>2001-Oct-04 15:01</td><td>2004-Mar-15 18:01</td><td>0.042763056503</td><td>17.674087</td><td>21.5</td><td></td><td>33.179</td></tr><tr><td>27</td><td>2016 FU12</td><td>       (2016 FU12)</td><td>2</td><td>2000-Aug-16 00:42</td><td>2001-Aug-16 23:20</td><td>0.036167021063</td><td>4.675601</td><td>26.9</td><td></td><td>30.638</td></tr><tr><td>28</td><td>2002 AA29</td><td>       (2002 AA29)</td><td>2</td><td>2002-Jan-08 22:16</td><td>2003-Jan-08 19:21</td><td>0.039109529061</td><td>5.860113</td><td>24.1</td><td></td><td>29.464</td></tr><tr><td>29</td><td>2020 BR2</td><td>       (2020 BR2)</td><td>2</td><td>2001-Jul-16 03:25</td><td>2003-Jan-03 11:10</td><td>0.040457671336</td><td>5.433871</td><td>26.12</td><td></td><td>28.442</td></tr><tr><td>30</td><td>2019 TF2</td><td>       (2019 TF2)</td><td>2</td><td>2003-Nov-04 18:24</td><td>2004-Jan-14 10:32</td><td>0.043082271275</td><td>1.551503</td><td>26.3</td><td></td><td>24.926</td></tr></tbody></table></div>
+    </section>
+  </main>
+</body>
+</html>

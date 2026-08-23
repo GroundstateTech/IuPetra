@@ -1,0 +1,31 @@
+field,value
+script_version,IuPetra v1.3.1
+run_time_utc,2026-06-10 18:53:15 UTC
+fireball_limit,500
+close_approach_date_min,2000-01-01
+close_approach_date_max,2035-01-01
+close_approach_distance_max_au,0.05
+close_approach_limit,1000
+top_report_limit,50
+high_energy_fireball_kt_threshold,0.1
+high_energy_window_days,14
+close_approach_window_days,14
+close_approach_cluster_distance_au,0.02
+repeat_object_min_count,2
+watchlist_min_score,40.0
+top_candidate_packet_limit,10
+fireball_rows_saved,500
+close_approach_rows_saved,1000
+sentry_rows_saved,2152
+settings_loaded_keys,"close_approach_cluster_distance_au, close_approach_date_max, close_approach_date_min, close_approach_distance_max_au, close_approach_limit, close_approach_window_days, fireball_limit, high_energy_fireball_kt_threshold, high_energy_window_days, repeat_object_min_count, sbdb_enrichment_limit, top_candidate_packet_limit, top_report_limit, watchlist_min_score"
+fireball_api_url,https://ssd-api.jpl.nasa.gov/fireball.api
+close_approach_api_url,https://ssd-api.jpl.nasa.gov/cad.api
+sentry_api_url,https://ssd-api.jpl.nasa.gov/sentry.api
+sbdb_api_url,https://ssd-api.jpl.nasa.gov/sbdb.api
+sbdb_enrichment_limit,25
+activity_score_warning,Relative anomaly-hunting score only. It is not a formal impact-risk metric.
+watchlist_warning,Pattern-finder candidates only. These are not official hazard predictions.
+evidence_review_warning,Evidence review explains why a candidate was flagged; it does not validate a causal hypothesis.
+orbit_context_warning,SBDB enrichment is a context lookup. It does not replace official risk analysis.
+workspace_organization,Reports are written directly into categorized subfolders. Root reports/ is only a container.
+dashboard_html,C:\Users\drdix\OneDrive\Desktop\IuPetra\reports\00_START_HERE\IuPetra_START_HERE.html
