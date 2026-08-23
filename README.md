@@ -1,6 +1,6 @@
 # IuPetra
 
-**IuPetra v1.3.1.1** is a local asteroid, close-approach, fireball, and orbital-context investigation tool built around public NASA/JPL data.
+**IuPetra v1.3.2** is a local asteroid, close-approach, fireball, and orbital-context investigation tool built around public NASA/JPL data.
 
 It pulls public datasets, normalizes them into local CSV files, looks for repeat activity and time-window patterns, enriches candidate objects with orbital context, cross-checks Sentry data, and generates a browsable local report workspace with an HTML dashboard.
 
@@ -45,7 +45,7 @@ IuPetra uses the Python standard library and currently has no third-party packag
 Launch_IuPetra.bat
 ```
 
-The launcher runs the data pull and report pipeline, then opens:
+The launcher uses the reliability wrapper, runs the data pull/report pipeline, records provenance, and then opens:
 
 ```text
 reports/00_START_HERE/IuPetra_START_HERE.html
@@ -53,7 +53,15 @@ reports/00_START_HERE/IuPetra_START_HERE.html
 
 ## Command Line
 
-Run the application directly:
+Recommended run command:
+
+```powershell
+python run_iupetra.py
+```
+
+`run_iupetra.py` leaves the scientific/report pipeline unchanged but replaces the network fetch primitive with bounded retry/backoff behavior and records a provenance manifest after the run.
+
+The original direct entry point remains available for debugging:
 
 ```powershell
 python iupetra.py
@@ -71,6 +79,27 @@ To also test connectivity to the NASA/JPL endpoints:
 python scripts/doctor.py --network
 ```
 
+## Reliability and provenance
+
+Transient NASA/JPL/network failures are retried with bounded exponential backoff. Permanent request errors fail immediately and flow into IuPetra's existing per-step error handling, which continues building reports from available local data when possible.
+
+Every normal launcher/wrapper run writes:
+
+```text
+reports/99_TECHNICAL_LOGS/run_provenance.json
+```
+
+That file records:
+
+- run timestamp and exit code
+- fetch/retry policy
+- SHA-256 checksums for generated/raw/clean files
+- file sizes and modification timestamps
+- raw-source freshness classification
+- a list of raw source files older than the current 24-hour freshness threshold
+
+The freshness label is diagnostic only. A source marked `stale` means the local raw file is older than the threshold; it does **not** mean the underlying NASA/JPL data are scientifically invalid.
+
 ## Workspace
 
 ```text
@@ -84,7 +113,7 @@ reports/
   02_PATTERN_FINDER/   temporal/repeat/anomaly reports
   03_ORBIT_CONTEXT/    SBDB and Sentry context
   04_SUMMARIES/        yearly/monthly/top-object summaries
-  99_TECHNICAL_LOGS/   run manifest and error log
+  99_TECHNICAL_LOGS/   run manifest, provenance and error log
   HTML_VIEWERS/        generated browser viewers
 ```
 
@@ -111,11 +140,11 @@ Current controls include:
 - top candidate packet size
 - SBDB enrichment limit
 
-The committed defaults currently examine close approaches from **2000-01-01 through 2035-01-01** within **0.05 AU**. These are analysis settings, not a statement about an object's risk. 
+The committed defaults currently examine close approaches from **2000-01-01 through 2035-01-01** within **0.05 AU**. These are analysis settings, not a statement about an object's risk.
 
 ## Failure behavior
 
-Network pulls are run as individual steps. If an API request fails, IuPetra logs the error and continues building whatever reports it can from available local data rather than terminating the entire run.
+Network pulls are run as individual steps. If an API request still fails after the bounded retry policy, IuPetra logs the error and continues building whatever reports it can from available local data rather than terminating the entire run.
 
 Technical errors are written to:
 
@@ -128,12 +157,12 @@ reports/99_TECHNICAL_LOGS/error_log.txt
 Run the local verification suite without calling external APIs:
 
 ```powershell
-python -m py_compile iupetra.py scripts/doctor.py tests/test_core.py
+python -m py_compile iupetra.py reliability.py run_iupetra.py scripts/doctor.py tests/test_core.py tests/test_reliability.py
 python scripts/doctor.py
 python -m unittest discover -s tests -v
 ```
 
-GitHub Actions runs the same basic checks on Windows and Linux with supported Python versions.
+GitHub Actions runs these checks on Windows and Linux with Python 3.11 and 3.13.
 
 ## Scientific interpretation
 

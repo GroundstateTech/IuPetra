@@ -26,7 +26,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
 
       - name: Syntax check
-        run: python -m py_compile iupetra.py scripts/doctor.py tests/test_core.py
+        run: python -m py_compile iupetra.py reliability.py run_iupetra.py scripts/doctor.py tests/test_core.py tests/test_reliability.py tests/test_runner.py
 
       - name: Offline preflight
         run: python scripts/doctor.py
