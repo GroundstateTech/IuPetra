@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Runtime API pulls and generated analysis
+# Keep these local unless a specific snapshot is intentionally committed.
+data/raw/*
+data/clean/*
+reports/*
+
+# Preserve directory placeholders when present
+!data/raw/.gitkeep
+!data/clean/.gitkeep
+!reports/.gitkeep
+
+# Test/cache output
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Packaging
+build/
+dist/
+*.spec
