@@ -11,6 +11,12 @@ SPEC.loader.exec_module(iupetra)
 
 
 class CoreTests(unittest.TestCase):
+    def test_standalone_contract_and_account_free_settings(self):
+        self.assertTrue((ROOT / "docs" / "STANDALONE_OPERATION.md").is_file())
+        payload = json.loads((ROOT / "settings.json").read_text(encoding="utf-8"))
+        self.assertNotIn("admin_center", payload)
+        self.assertNotIn("identity_provider", payload)
+
     def test_settings_file_is_valid_object(self):
         payload = json.loads((ROOT / "settings.json").read_text(encoding="utf-8"))
         self.assertIsInstance(payload, dict)
