@@ -59,7 +59,8 @@ class ConfidenceAuditTests(unittest.TestCase):
 
             output = build_confidence_audit(root)
             self.assertTrue(output.exists())
-            rows = list(csv.DictReader(output.open("r", encoding="utf-8", newline="")))
+            with output.open("r", encoding="utf-8", newline="") as handle:
+                rows = list(csv.DictReader(handle))
             self.assertEqual(len(rows), 1)
             row = rows[0]
             self.assertEqual(row["candidate_id"], "OBJ-1")
@@ -85,7 +86,8 @@ class ConfidenceAuditTests(unittest.TestCase):
                 }],
             )
             output = build_confidence_audit(root)
-            rows = list(csv.DictReader(output.open("r", encoding="utf-8", newline="")))
+            with output.open("r", encoding="utf-8", newline="") as handle:
+                rows = list(csv.DictReader(handle))
             flags = rows[0]["uncertainty_flags"]
             self.assertIn("source_quality_limit", flags)
             self.assertIn("orbit_context_incomplete", flags)
