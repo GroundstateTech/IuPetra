@@ -208,3 +208,7 @@ For official small-body and impact-risk information, defer to NASA/JPL/CNEOS sou
 ## Status
 
 IuPetra is active alpha/research software. Output formats, scoring, and investigation workflows may evolve as the evidence-review system improves.
+
+## Standalone-first deployment
+
+This project does not require Groundstate Admin Center or a Groundstate account. Core operation remains local and independently deployable. See [docs/STANDALONE_OPERATION.md](docs/STANDALONE_OPERATION.md) for the product-specific identity and outage boundary.
