@@ -135,5 +135,7 @@ def build_provenance(project_root: Path, exit_code: int) -> Dict[str, Any]:
 def write_provenance(project_root: Path, exit_code: int) -> Path:
     target = project_root / 'reports' / '99_TECHNICAL_LOGS' / 'run_provenance.json'
     target.parent.mkdir(parents=True, exist_ok=True)
-    target.write_text(json.dumps(build_provenance(project_root, exit_code), indent=2) + '\n', encoding='utf-8')
+    temporary = target.with_suffix('.json.tmp')
+    temporary.write_text(json.dumps(build_provenance(project_root, exit_code), indent=2) + '\n', encoding='utf-8')
+    temporary.replace(target)
     return target
